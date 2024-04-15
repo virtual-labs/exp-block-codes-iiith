@@ -73,139 +73,264 @@
         </div>
     </div>
     <br>
-
-    <div class="columns is-centered">
-        <div class="column is-11-desktop is-12-tablet is-12-mobile">
-            <div class="v-datalist-container components-list">
-                <br>
-                <p> All set of codeword for C whose parity-check matrix
-                    \(H \)=
-                    \(\begin{bmatrix}
-                    1 & 0 & 0 & 1 & 1\\
-                    0 & 1 & 0 & 0 & 1\\
-                    0 & 0 & 1 & 1 & 0
-                    \end{bmatrix}
-                    \).
-                </p>
-                <br>
-            </div>
-        </div>
-    </div>
-
-	<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
-		style="margin-top:-1.5%">
-		<div class="column is-8-desktop is-12-tablet is-12-mobile">
-			<div class="box-question">
-
-				<div class="code-word">
-					<button class="button-2" id="w1" onClick="change(id)">
-						<font size="+2">[</font> 0 0 0 0 0 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w2" onClick="change(id)">
-						<font size="+2">[</font> 1 0 0 1 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w3" onClick="change(id)">
-						<font size="+2">[</font> 0 1 0 0 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w4" onClick="change(id)">
-						<font size="+2">[</font> 0 0 1 1 0 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w5" onClick="change(id)">
-						<font size="+2">[</font> 1 1 0 1 0 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w6" onClick="change(id)">
-						<font size="+2">[</font> 1 0 1 0 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w7" onClick="change(id)">
-						<font size="+2">[</font> 0 1 1 1 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w8" onClick="change(id)">
-						<font size="+2">[</font> 1 0 0 1 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w9" onClick="change(id)">
-						<font size="+2">[</font> 1 0 0 0 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w10" onClick="change(id)">
-						<font size="+2">[</font> 1 0 0 1 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w11" onClick="change(id)">
-						<font size="+2">[</font> 1 0 1 0 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w12" onClick="change(id)">
-						<font size="+2">[</font> 1 1 0 0 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w13" onClick="change(id)">
-						<font size="+2">[</font> 1 1 0 1 0 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w14" onClick="change(id)">
-						<font size="+2">[</font> 1 1 1 1 0 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<div class="code-word">
-					<button class="button-2" id="w15" onClick="change(id)">
-						<font size="+2">[</font> 1 1 1 1 1 <font size="+2">]</font>
-					</button>
-				</div>
-
-				<br>
-
-				<button class="v-button" role="button" onClick="check()"> Submit </button>
-				<button class="v-button" role="button" onClick="deselect()"> Reset </button>
-
-
-			</div>
-		</div>
-
-		<div class="column is-3-desktop is-4-tablet is-12-mobile">
-			<div class="v-datalist-container components-list">
-				<div class="v-datalist-title">Observations</div>
-				<div id="observations">
-
+	
+	<section id="ex1">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<br>
+					<p> All set of codeword for C whose parity-check matrix
+						\(H \)=
+						\(\begin{bmatrix}
+						0 & 0 & 1 & 0 & 1\\
+						0 & 1 & 0 & 1 & 1\\
+						1 & 0 & 0 & 1 & 0
+						\end{bmatrix}
+						\).
+					</p>
+					<br>
 				</div>
 			</div>
 		</div>
-	</div>
 
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%; width: 100%; max-width: 1200px;">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					<table align="center">
+						<tr>
+							<td><div class="code-word">
+								<button class="button-2" id="a1" onClick="change(id)">
+									<font size="+2">[</font> 0 0 0 0 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a2" onClick="change(id)">
+									<font size="+2">[</font> 0 0 1 0 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a3" onClick="change(id)">
+									<font size="+2">[</font> 1 1 0 1 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a4" onClick="change(id)">
+									<font size="+2">[</font> 0 1 1 0 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a5" onClick="change(id)">
+									<font size="+2">[</font> 0 1 0 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+						</tr>
+
+						<tr>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a6" onClick="change(id)">
+									<font size="+2">[</font> 1 0 0 1 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a7" onClick="change(id)">
+									<font size="+2">[</font> 1 0 1 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a8" onClick="change(id)">
+									<font size="+2">[</font> 1 0 0 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a9" onClick="change(id)">
+									<font size="+2">[</font> 1 1 1 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="a10" onClick="change(id)">
+									<font size="+2">[</font> 1 0 1 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+						</tr>
+					</table>
+					<br>
+
+					<button class="v-button" role="button" onClick="check1()"> Submit </button>
+					<button class="v-button" role="button" onClick="deselect1()"> Reset </button>
+					<button class="v-button" role="button" onclick="pa2()"> Next </button>
+				</div>
+			</div>
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations1">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="ex2" style="display: none;">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<br>
+					<p> All set of codeword for C whose parity-check matrix
+						\(H \)=
+						\(\begin{bmatrix}
+						1 & 1 & 0 & 1 & 0 & 0 & 0\\
+						0 & 1 & 1 & 0 & 1 & 0 & 0\\
+						0 & 0 & 1 & 1 & 0 & 1 & 0\\
+						0 & 0 & 0 & 1 & 1 & 0 & 1
+						\end{bmatrix}
+						\).
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					<table align="center">
+						<tr>
+							<td><div class="code-word">
+								<button class="button-2" id="w1" onClick="change(id)">
+									<font size="+2">[</font> 1 0 0 1 0 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w2" onClick="change(id)">
+									<font size="+2">[</font> 0 1 0 1 1 1 0<font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w3" onClick="change(id)">
+									<font size="+2">[</font> 0 0 0 0 0 0 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w4" onClick="change(id)">
+									<font size="+2">[</font> 1 1 1 0 0 0 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+						</tr>
+						<tr>
+							<td><div class="code-word">
+								<button class="button-2" id="w5" onClick="change(id)">
+									<font size="+2">[</font> 0 0 1 0 1 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w6" onClick="change(id)">
+									<font size="+2">[</font> 1 1 0 1 0 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w7" onClick="change(id)">
+									<font size="+2">[</font> 1 1 0 0 1 0 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w8" onClick="change(id)">
+									<font size="+2">[</font> 1 0 1 1 1 0 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+						</tr>
+						<tr>
+							<td><div class="code-word">
+								<button class="button-2" id="w9" onClick="change(id)">
+									<font size="+2">[</font> 1 1 0 0 1 0 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w10" onClick="change(id)">
+									<font size="+2">[</font> 1 0 1 1 1 0 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w11" onClick="change(id)">
+									<font size="+2">[</font> 1 1 1 0 1 0 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w12" onClick="change(id)">
+									<font size="+2">[</font> 0 1 1 1 0 0 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+						</tr>
+						<tr>			
+							<td><div class="code-word">
+								<button class="button-2" id="w13" onClick="change(id)">
+									<font size="+2">[</font> 1 1 1 0 0 1 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w14" onClick="change(id)">
+									<font size="+2">[</font> 0 1 1 0 1 1 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+			
+							<td><div class="code-word">
+								<button class="button-2" id="w15" onClick="change(id)">
+									<font size="+2">[</font> 1 1 1 1 1 1 1 <font size="+2">]</font>
+								</button>
+							</div></td>
+
+							<td><div class="code-word">
+								<button class="button-2" id="w16" onClick="change(id)">
+									<font size="+2">[</font> 0 0 0 0 0 1 0 <font size="+2">]</font>
+								</button>
+							</div></td>
+						</tr>
+
+						</table>
+	
+					<br>
+	
+					<button class="v-button" role="button" onClick="check2()"> Submit </button>
+					<button class="v-button" role="button" onClick="deselect2()"> Reset </button>
+					<button class="v-button" role="button" onclick="pa1()"> Previous </button>
+				</div>
+			</div>
+	
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations2">
+	
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+	
     <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
     <script src="./js/identify_codewords.js"></script>
 </body>
