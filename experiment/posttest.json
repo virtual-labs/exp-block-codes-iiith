@@ -2,89 +2,93 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Add given two 5-length tuple $\\left(1,0,1,0,1,1\\right)$ and $\\left(1,0,0,1,1,0\\right)$ over $F_2$",
+      "question": "Conside a code $C$ with generator matrix $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\end{bmatrix}$, select which not parity check matrix of respective $G$",
       "answers": {
-        "a": "$\\left(2,0,1,1,2,1\\right)$",
-        "b": "$\\left(0,0,0,1,1,1\\right)$",
-        "c": "$\\left(1,0,0,0,1,0\\right)$",
-        "d": "None"
+        "a": "$\\begin{bmatrix} 0 & 1 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 1 & 0 & 0 & 0 & 1\\end{bmatrix}$",
+        "b": "$\\begin{bmatrix} 0 & 1 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 0 & 0 & 1 & 0 & 1\\end{bmatrix}$",
+        "c": "$\\begin{bmatrix} 0 & 1 & 1 & 1 & 1 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 1 & 0 & 0 & 0 & 1\\end{bmatrix}$",
+        "d": "$\\begin{bmatrix} 0 & 1 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 1 & 1 & 1 & 1 & 1\\end{bmatrix}$",
+        "e": "None"
       },
       "explanations": {
-        "a": "Addition not over $F_2$",
-        "b": "Correct Answer",
-        "c": "It's complement of correct answer.",
-        "d": ""
+        "a": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
+        "b": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
+        "c": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
+        "d": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
+        "e": "All options are valid parity-check matrix of given generator matrix."
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "e",
+      "difficulty": "intermediate"
     },
     {
-      "question": "Let two 3x3 matrix $A = \\begin{bmatrix} 1 & 0 & 1 \\\\ 1 & 1 & 0 \\\\ 0 & 1 & 1 \\end{bmatrix}$ and $B = \\begin{bmatrix} 1 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$. Result of matrix multiplication $AB$ is",
+      "question": "For message $\\textbf{m} = \\left(1,0,0,1\\right)$ find correct codeword if generator matrix is $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\\\ 1 & 0 & 0 & 0 & 0 & 0 \\end{bmatrix}$",
       "answers": {
-        "a": "$\\begin{bmatrix} 2 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
-        "b": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
-        "c": "$\\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\end{bmatrix}$",
-        "d": "$\\begin{bmatrix} 2 \\\\ 1 \\\\ 2 \\end{bmatrix}$"
-      },
-      "explanations": {
-        "a": "Operation not over $F_2$",
-        "b": "Correct option",
-        "c": "Not inner product of rows",
-        "d": "Not inner product of row of A and column of B"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Multiplication of elements $x^3 + x + 1$ and $x^2 + x^ +1$ over $F_{2^4}$",
-      "answers": {
-        "a": "$x^5 + x^4 + 1$",
-        "b": "$x^5 + x^4 + 2x^3 + 2x^2 + x + 1$",
-        "c": "$x^3 + x^2 + x$",
-        "d": "$x^5 + x^4 + x^3 + x^2 + x + 1$"
+        "a": "$\\left(0,0,1,0,1,1\\right)$",
+        "b": "$\\left(1,0,1,0,1,1\\right)$",
+        "c": "$\\left(1,0,0,0,0,0\\right)$",
+        "d": "$\\left(0,0,0,0,0,0\\right)$"
       },
       "explanations": {
         "a": "Correct option",
-        "b": "Multiplication operation not over $F_{2^4}$",
-        "c": "",
-        "d": ""
+        "b": "Valid codeword but not correct w.r.t $\\textbf{m}$",
+        "c": "Valid codeword but not correct w.r.t $\\textbf{m}$",
+        "d": "Valid codeword but not correct w.r.t $\\textbf{m}$"
       },
       "correctAnswer": "a",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     },
     {
-      "question": "Given list of vectors are linear independent $\\left(1,0,1,0,1\\right), \\left(0,1,0,1,1\\right), \\text{ and } \\left(1,1,0,1,1\\right)$. Select correct option:",
+      "question": "Conside a code $C$ with parity-check matrix $H = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$. Find a invalid codeword of $C$.",
       "answers": {
-        "a": "$\\left(1,0,0,0,0\\right)$ is linear independent",
-        "b": "$\\left(0,1,1,1,0\\right)$ is linear independent",
-        "c": "$\\left(0,0,1,0,0\\right)$ is linear dependent",
-        "d": "$\\left(1,0,1,0,1\\right)$ is linear dependent"
+        "a": "$\\left(1,0,1,1\\right)$",
+        "b": "$\\left(0,0,0,0\\right)$",
+        "c": "$\\left(1,1,1,0\\right)$",
+        "d": "$\\left(0,1,0,1\\right)$",
+        "e": "None"
       },
       "explanations": {
-        "a": "Linear combination of $\\left(0,1,0,1,1\\right), \\text{ and } \\left(1,1,0,1,1\\right)$",
-        "b": "Linear combination of all given vectors",
-        "c": "A linear independent vector ",
-        "d": "Correct option"
+        "a": "Valid codeword",
+        "b": "Valid codeword",
+        "c": "Valid codeword",
+        "d": "Valid codeword",
+        "e": "Correct option"
       },
-      "correctAnswer": "d",
-      "difficulty": "intermediate"
+      "correctAnswer": "e",
+      "difficulty": "beginner"
     },
     {
-      "question": "Find the rank of matrix $R = \\begin{bmatrix} 1 & 0 & 0 & 0 & 0 \\\\ 1 & 0 & 1 & 1 & 0 \\\\ 0 & 0 & 1 & 0 & 0 \\\\ 1 & 0 & 1 & 0 & 1 \\end{bmatrix}$",
+      "question": "Conside in noiseless-communication system user fixed the code $C$ with parity-check matrix $H = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$ and receiver received codeword $\\left(1,1,1,0\\right)$. Find the expected transmitted message and generator matrix.",
       "answers": {
-        "a": "4",
-        "b": "3",
-        "c": "2",
-        "d": "1"
+        "a": "$G = \\begin{bmatrix} 0 & 1 & 0 & 1 \\\\ 1 & 1 & 1 & 0 \\end{bmatrix}$ and message transmitted be $\\left(1,0\\right)$",
+        "b": "$G = \\begin{bmatrix} 1 & 1 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$ and message transmitted be $\\left(0,1\\right)$",
+        "c": "$G = \\begin{bmatrix} 1 & 0 & 1 & 1 \\\\ 0 & 1 & 0 & 1 \\end{bmatrix}$ and message transmitted be $\\left(1,1\\right)$",
+        "d": "$G = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 1 & 1 & 1 & 0 \\end{bmatrix}$ and message transmitted be $\\left(0,1\\right)$"
       },
       "explanations": {
-        "a": "Not all rows are linear independent.",
-        "b": "Correct option",
-        "c": "Some more rows are linear indepenednt",
-        "d": "Some more rows are linear indepenednt"
+        "a": "Valid Generator matrix but wrong message vector",
+        "b": "Valid Generator matrix but wrong message vector",
+        "c": "Correct option",
+        "d": "Invalid Generator matrix"
       },
       "correctAnswer": "c",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Conside a code $C$ with generator matrix $G = \\begin{bmatrix} 1 & \\epsilon & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$. Let symbol $\\epsilon$ can take either 0 or 1 at a time. Find a correct mapping from message vector to codeword.",
+      "answers": {
+        "a": "$\\left(1,0\\right)$ and $\\left(1,1,1,0\\right)$ if $\\epsilon=0$",
+        "b": "$\\left(1,1\\right)$ and $\\left(1,1,0,1\\right)$ if $\\epsilon=1$",
+        "c": "$\\left(1,0\\right)$ and $\\left(1,0,1,0\\right)$ if $\\epsilon=0$",
+        "d": "$\\left(0,0\\right)$ and $\\left(1,0,1,0\\right)$ if $\\epsilon=1$"
+      },
+      "explanations": {
+        "a": "For $\\left(1,0\\right)$ and $\\epsilon=0$ codeword be $\\left(1,0,1,0\\right)$",
+        "b": "For $\\left(1,1\\right)$ and $\\epsilon=1$ codeword be $\\left(1,0,0,1\\right)$",
+        "c": "Correct option",
+        "d": "For $\\left(0,0\\right)$ and $\\epsilon=0$ or $1$ codeword be $\\left(0,0,0,0\\right)$"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
     }
   ]
 }
