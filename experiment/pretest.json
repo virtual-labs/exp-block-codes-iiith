@@ -2,24 +2,24 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Add given two 5-length tuple $\\left(1,0,1,0,1,1\\right)$ and $\\left(1,0,0,1,1,0\\right)$ over $F_2$",
+      "question": "Add the two $5$-length binary tuples $\\left(1,0,1,0,1,1\\right)$ and $\\left(1,0,0,1,1,0\\right)$ over $\\mathbb{F}_2$",
       "answers": {
         "a": "$\\left(2,0,1,1,2,1\\right)$",
         "b": "$\\left(0,0,0,1,1,1\\right)$",
         "c": "$\\left(1,0,0,0,1,0\\right)$",
-        "d": "None"
+        "d": "None [KEEP SOME OTHER OPTION]"
       },
       "explanations": {
         "a": "Addition not over $F_2$",
-        "b": "Correct Answer",
-        "c": "It's complement of correct answer.",
+        "b": "Correct Answer! [ADD LONGER EXPLANATION) - TRY TO CHANGE THE ",
+        "c": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be (1+1)~(mod~2)",
         "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Let two 3x3 matrix $A = \\begin{bmatrix} 1 & 0 & 1 \\\\ 1 & 1 & 0 \\\\ 0 & 1 & 1 \\end{bmatrix}$ and $B = \\begin{bmatrix} 1 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$. Result of matrix multiplication $AB$ is",
+      "question": "Consider two 3x3 matrices $A = \\begin{bmatrix} 1 & 0 & 1 \\\\ 1 & 1 & 0 \\\\ 0 & 1 & 1 \\end{bmatrix}$ and $B = \\begin{bmatrix} 1 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$. The result of matrix multiplication $AB$ over $F_2$ is",
       "answers": {
         "a": "$\\begin{bmatrix} 2 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
         "b": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
@@ -53,9 +53,9 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Given list of vectors are linear independent $\\left(1,0,1,0,1\\right), \\left(0,1,0,1,1\\right), \\text{ and } \\left(1,1,0,1,1\\right)$. Select correct option:",
+      "question": "The list of vectors in $\\mathbb{F}_2^5$ given in the set $S=\\{\\left(1,0,1,0,1\\right), \\left(0,1,0,1,1\\right), \\left(1,1,0,1,1\\right)\\}$ are linearly independent. Consider the statements below, and select the one which is true.",
       "answers": {
-        "a": "$\\left(1,0,0,0,0\\right)$ is linear independent",
+        "a": "If we add the vector $\\left(1,0,0,0,0\\right)$ to $S$ and get a new set with $4$ vectors named $S'$, then the set $S'$ is a linear independent set of vectors",
         "b": "$\\left(0,1,1,1,0\\right)$ is linear independent",
         "c": "$\\left(0,0,1,0,0\\right)$ is linear dependent",
         "d": "$\\left(1,0,1,0,1\\right)$ is linear dependent"

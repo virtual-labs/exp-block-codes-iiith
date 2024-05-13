@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Conside a code $C$ with generator matrix $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\end{bmatrix}$, select which not parity check matrix of respective $G$",
+      "question": "Consider a code $\\mathcal{C}$ with generator matrix $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\end{bmatrix}$, Select the matrix which is \\textbf{not} a parity check of the code.",
       "answers": {
         "a": "$\\begin{bmatrix} 0 & 1 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 1 & 0 & 0 & 0 & 1\\end{bmatrix}$",
         "b": "$\\begin{bmatrix} 0 & 1 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 0 & 0 & 1 & 0 & 1\\end{bmatrix}$",
@@ -21,7 +21,7 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "For message $\\textbf{m} = \\left(1,0,0,1\\right)$ find correct codeword if generator matrix is $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\\\ 1 & 0 & 0 & 0 & 0 & 0 \\end{bmatrix}$",
+      "question": "For message $\\textbf{m} = \\left(1,0,0,1\\right)$ find correct codeword if generator matrix is $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\\\ 1 & 0 & 0 & 0 & 0 & 0 \\end{bmatrix}$. ",
       "answers": {
         "a": "$\\left(0,0,1,0,1,1\\right)$",
         "b": "$\\left(1,0,1,0,1,1\\right)$",
@@ -38,7 +38,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Conside a code $C$ with parity-check matrix $H = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$. Find a invalid codeword of $C$.",
+      "question": "Consider a code $C$ with parity-check matrix $H = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$. Find a invalid codeword of $C$.",
       "answers": {
         "a": "$\\left(1,0,1,1\\right)$",
         "b": "$\\left(0,0,0,0\\right)$",
@@ -57,12 +57,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Conside in noiseless-communication system user fixed the code $C$ with parity-check matrix $H = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$ and receiver received codeword $\\left(1,1,1,0\\right)$. Find the expected transmitted message and generator matrix.",
+      "question": "Consider a noiseless-communication system user fixed the code $C$ with parity-check matrix $H = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$ and receiver received codeword $\\left(1,1,1,0\\right)$. Find a correct (transmitted message, generator matrix) pair.",
       "answers": {
         "a": "$G = \\begin{bmatrix} 0 & 1 & 0 & 1 \\\\ 1 & 1 & 1 & 0 \\end{bmatrix}$ and message transmitted be $\\left(1,0\\right)$",
         "b": "$G = \\begin{bmatrix} 1 & 1 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$ and message transmitted be $\\left(0,1\\right)$",
         "c": "$G = \\begin{bmatrix} 1 & 0 & 1 & 1 \\\\ 0 & 1 & 0 & 1 \\end{bmatrix}$ and message transmitted be $\\left(1,1\\right)$",
-        "d": "$G = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 1 & 1 & 1 & 0 \\end{bmatrix}$ and message transmitted be $\\left(0,1\\right)$"
+        "d": "$G = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 1 & 1 & 1 & 0 \\end{bmatrix}$ and message transmitted be $\\left(1 ,1\\right)$"
       },
       "explanations": {
         "a": "Valid Generator matrix but wrong message vector",
@@ -74,18 +74,18 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Conside a code $C$ with generator matrix $G = \\begin{bmatrix} 1 & \\epsilon & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$. Let symbol $\\epsilon$ can take either 0 or 1 at a time. Find a correct mapping from message vector to codeword.",
+      "question": "Consider a code $C$ with generator matrix $G = \\begin{bmatrix} 1 & a & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$. Suppose symbol $a$ can take either 0 or 1. Which of the following statements are true?",
       "answers": {
-        "a": "$\\left(1,0\\right)$ and $\\left(1,1,1,0\\right)$ if $\\epsilon=0$",
+        "a": "If the message is $\\left(1,0\\right)$, the corresponding codeword is $\\left(1,1,1,0\\right)$, given $a=0$",
         "b": "$\\left(1,1\\right)$ and $\\left(1,1,0,1\\right)$ if $\\epsilon=1$",
         "c": "$\\left(1,0\\right)$ and $\\left(1,0,1,0\\right)$ if $\\epsilon=0$",
         "d": "$\\left(0,0\\right)$ and $\\left(1,0,1,0\\right)$ if $\\epsilon=1$"
       },
       "explanations": {
-        "a": "For $\\left(1,0\\right)$ and $\\epsilon=0$ codeword be $\\left(1,0,1,0\\right)$",
-        "b": "For $\\left(1,1\\right)$ and $\\epsilon=1$ codeword be $\\left(1,0,0,1\\right)$",
+        "a": "For $\\left(1,0\\right)$ and $a=0$ codeword be $\\left(1,0,1,0\\right)$",
+        "b": "For $\\left(1,1\\right)$ and $a=1$ codeword be $\\left(1,0,0,1\\right)$",
         "c": "Correct option",
-        "d": "For $\\left(0,0\\right)$ and $\\epsilon=0$ or $1$ codeword be $\\left(0,0,0,0\\right)$"
+        "d": "For $\\left(0,0\\right)$ and $a=0$ or $1$ codeword be $\\left(0,0,0,0\\right)$"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
