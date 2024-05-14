@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Add the two $5$-length binary tuples $\\left(1,0,1,0,1,1\\right)$ and $\\left(1,0,0,1,1,0\\right)$ over $\\mathbb{F}_2$",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "$\\left(2,0,1,1,2,1\\right)$",
+        "b": "$\\left(0,0,1,1,0,1\\right)$",
+        "c": "$\\left(1,0,0,0,1,0\\right)$",
+        "d": "$\\left(0,0,0,1,0,0\\right)$"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be (1+1)~ \\mod2 = 0 and third position should be (1+0)~ \\mod2 = 1.",
+        "b": "Correct Answer!, the mod2 sum of each coordinate ((1+1)~ \\mod2,(0+0)~ \\mod2,(1+0)~ \\mod2,(0+1)~ \\mod2,(1+1)~ \\mod2,(0+1)~ \\mod2) = (0,0,1,1,0,1).",
+        "c": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be (1+1)~ \\mod2 = 0 and third position should be (0+1)~ \\mod2 = 1.",
+        "d": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be (1+1)~ \\mod2 = 0 and third position should be (0+1)~ \\mod2 = 1."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Consider two 3x3 matrices $A = \\begin{bmatrix} 1 & 0 & 1 \\\\ 1 & 1 & 0 \\\\ 0 & 1 & 1 \\end{bmatrix}$ and $B = \\begin{bmatrix} 1 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$. The result of matrix multiplication $AB$ over $\\mathbb{F}_2$ is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "$\\begin{bmatrix} 2 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
+        "b": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
+        "c": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{bmatrix}$",
+        "d": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 1 & 1 & 1 \\end{bmatrix}$"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(1,1)}$ position should be $(1\\times 1 + 0\\times 0 + 1\\times 1)~ \\mod2 = 0$ and $AB_{(2,2)}$ position should be $(1\\times 1 + 1\\times 0 + 0\\times 0)~ \\mod2 = 1$.",
+        "b": "Correct Answer! the matrix we get after product is $\\begin{bmatrix} (1\\times 1 + 0\\times 0 + 1\\times 0)\\mod2 & (1\\times 1 + 0\\times 0 + 0\\times 0)\\mod2 & (1\\times 0 + 0\\times 1 + 1\\times 1)\\mod2 \\\\ (1\\times 1 + 1\\times 0 + 0\\times 1)\\mod2 & (1\\times 1 + 1\\times 0 + 1\\times 0)\\mod2 & (1\\times 0 + 1\\times 1 + 1\\times 1)\\mod2 \\\\ (0\\times 1 + 1\\times 0 + 1\\times 1)\\mod2 & (0\\times 1 + 1\\times 0 + 1\\times 0)\\mod2 & (0\\times 0 + 1\\times 1 + 1\\times 1)\\mod2 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
+        "c": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(3,2)}$ position should be $(0\\times 1 + 1\\times 0 + 1\\times 0)~ \\mod2 = 0.$",
+        "d": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(2,2)}$ position should be $(1\\times 1 + 1\\times 0 + 0\\times 0)~ \\mod2 = 1.$"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Add the four $3$-length binary tuples $\\left(1,0,1\\right)$, $\\left(0,0,1\\right)$, $\\left(1,0,0\\right)$ and $\\left(0,1,1\\right)$ over $\\mathbb{F}_2$",
+      "answers": {
+        "a": "$\\left(0,0,0\\right)$",
+        "b": "$\\left(0,0,1\\right)$",
+        "c": "$\\left(0,1,1\\right)$",
+        "d": "$\\left(0,1,0\\right)$"
+      },
+      "explanations": {
+        "a": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 3 position should be (1+1+0+1) \\mod2 = 1.",
+        "b": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 2 position should be (0 + 0 + 0 + 1) \\mod2 = 1.",
+        "c": "Correct Answer! sum of four tuple is like ((1 + 0 + 1 + 0) \\mod2,(0 + 0 + 0 + 1) \\mod2,(1 + 1 + 0 + 1) \\mod2) = (0,1,1)",
+        "d": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 3 position should be (1+1+0+1) \\mod2 = 1."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "The list of vectors in $\\mathbb{F}_{2}^{5}$ given in the set $S=\\{\\left(1,0,1,0,1\\right), \\left(0,1,0,1,1\\right), \\left(1,1,0,1,1\\right)\\}$ are linearly independent. Consider the statements below, and select the one which is true.",
+      "answers": {
+        "a": "If we add the vector $\\left(1,0,0,0,0\\right)$ to $S$ and get a new set with $4$ vectors named $S'$, then the set $S'$ is a linear independent set of vectors.",
+        "b": "If we add the vector $\\left(0,1,1,1,0\\right)$ to $S$ and get a new set with $4$ vectors named $S'$, then the set $S'$ is a linear independent set of vectors.",
+        "c": "If we add the vector $\\left(0,0,1,0,0\\right)$ to $S$ and get a new set with $4$ vectors named $S'$, then the set $S'$ is a linear dependent set of vectors.",
+        "d": "If we add the vector $\\left(1,0,1,0,1\\right)$ to $S$ and get a new set with $4$ vectors named $S'$, then the set $S'$ is a linear dependent set of vectors."
+      },
+      "explanations": {
+        "a": "Given option is linear dependent vector. Verify it be taking linear combination of $\\left(0,1,0,1,1\\right), \\text{ and } \\left(1,1,0,1,1\\right)$ will result in this option.",
+        "b": "Given option is linear dependent vector. Verify it be taking linear combination of $\\left(1,0,1,0,1\\right), \\text{ and } \\left(1,1,0,1,1\\right)$ will result in this option.",
+        "c": "Given option is linear independent vector. Verify it be taking any linear combination will not result this given vector.",
+        "d": "Correct Answer! Given option is linear dependent vector. The option is an element of the vecotr  S` thus it's linear dependent vector $\\left(1,1,0,1,1\\right)$."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Find the rank of matrix $R = \\begin{bmatrix} 1 & 0 & 0 & 0 & 0 \\\\ 1 & 0 & 1 & 1 & 0 \\\\ 0 & 0 & 1 & 0 & 0 \\\\ 1 & 0 & 1 & 0 & 1 \\end{bmatrix}$",
+      "answers": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "d": "5"
+      },
+      "explanations": {
+        "a": "Correct Answer! Row analysis: All 4 rows are linear independent. Column analysis: Since second column is all zero thus rank is less than equal to 4. Rest 4 columns are linear independt.",
+        "b": "Please think about including 1 more linear independt rows or column.",
+        "c": "Please think about including 2 more linear independt rows or column.",
+        "d": "Number of rows is 4 then surely $rank(R) \\leq 4$"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }

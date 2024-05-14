@@ -2,35 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Consider a code $\\mathcal{C}$ with generator matrix $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\end{bmatrix}$, Select the matrix which is $\\textbf{not}$ a parity check of the code.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "$\\begin{bmatrix} 0 & 1 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 1 & 0 & 0 & 0 & 1\\end{bmatrix}$",
+        "b": "$\\begin{bmatrix} 0 & 1 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 0 & 0 & 1 & 0 & 1\\end{bmatrix}$",
+        "c": "$\\begin{bmatrix} 0 & 1 & 1 & 1 & 1 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 1 & 0 & 0 & 0 & 1\\end{bmatrix}$",
+        "d": "$\\begin{bmatrix} 0 & 1 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 & 1 & 0 \\\\ 1 & 1 & 1 & 1 & 1 & 1\\end{bmatrix}$",
+        "e": "None"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
+        "b": "Write all codewords and select all possible linear independent codewords as rows of $H$.", 
+        "c": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
+        "d": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
+        "e": "All options are valid parity-check matrix of given generator matrix."
+      },
+      "correctAnswer": "e",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "For message $\\textbf{m} = \\left(1,0,0,1\\right)$ find correct codeword if generator matrix is $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\\\ 1 & 0 & 0 & 0 & 0 & 0 \\end{bmatrix}$. ",
+      "answers": {
+        "a": "$\\left(0,0,1,0,1,1\\right)$",
+        "b": "$\\left(1,0,1,0,1,1\\right)$",
+        "c": "$\\left(1,0,0,0,0,0\\right)$",
+        "d": "$\\left(0,0,0,0,0,0\\right)$"
+      },
+      "explanations": {
+        "a": "Correct option",
+        "b": "Valid codeword but not correct w.r.t $\\textbf{m}$. For instance first cooardinate of the codeword corresponding to message vector will be (1x1 + 0x1 + 0x1 + 1x1)(mod2) = 0.",
+        "c": "Valid codeword but not correct w.r.t $\\textbf{m}$. For instance first cooardinate of the codeword corresponding to message vector will be (1x1 + 0x1 + 0x1 + 1x1)(mod2) = 0.",
+        "d": "Valid codeword but not correct w.r.t $\\textbf{m}$. For instance third cooardinate of the codeword corresponding to message vector will be (1x1 + 0x0 + 0x0 + 1x0)(mod2) = 1."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Consider a code $C$ with parity-check matrix $H = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$. Find a invalid codeword of $C$.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "$\\left(1,0,1,1\\right)$",
+        "b": "$\\left(0,0,0,0\\right)$",
+        "c": "$\\left(1,1,1,0\\right)$",
+        "d": "$\\left(0,1,1,1\\right)$"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
+        "b": "Zero-vector is a valid code for any linear code. A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
+        "c": "A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
+        "d": "Correct Option! An invalid vector, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} \\neq \\textbf{0}$."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider a noiseless-communication system with code $C$ and corresponding parity-check matrix $H = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$ and receiver received codeword $\\left(1,1,1,0\\right)$. Find a correct (generator matrix, transmitted message) pair.",
+      "answers": {
+        "a": "$G = \\begin{bmatrix} 0 & 1 & 0 & 1 \\\\ 1 & 1 & 1 & 0 \\end{bmatrix}$ and message transmitted be $\\left(1,0\\right)$",
+        "b": "$G = \\begin{bmatrix} 1 & 1 & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$ and message transmitted be $\\left(0,1\\right)$",
+        "c": "$G = \\begin{bmatrix} 1 & 0 & 1 & 1 \\\\ 0 & 1 & 0 & 1 \\end{bmatrix}$ and message transmitted be $\\left(1,1\\right)$",
+        "d": "$G = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 1 & 1 & 1 & 0 \\end{bmatrix}$ and message transmitted be $\\left(1,1\\right)$"
+      },
+      "explanations": {
+        "a": "Valid Generator matrix but wrong message vector.",
+        "b": "Invalid Generator matrix corresponding to given code.",
+        "c": "Correct option!",
+        "d": "Invalid Generator matrix corresponding to given code."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider a code $C$ with generator matrix $G = \\begin{bmatrix} 1 & a & 1 & 0 \\\\ 0 & 1 & 1 & 1 \\end{bmatrix}$. Suppose symbol $a$ can take either 0 or 1. Which of the following statements are true?",
+      "answers": {
+        "a": "If the message is $\\left(1,0\\right)$, the corresponding codeword is $\\left(1,1,1,0\\right)$, given $a=0$.",
+        "b": "If the message is $\\left(1,1\\right)$, the corresponding codeword is $\\left(1,1,0,1\\right)$, given $a=1$.",
+        "c": "If the message is $\\left(1,0\\right)$, the corresponding codeword is $\\left(1,0,1,0\\right)$, given $a=0$.",
+        "d": "If the message is $\\left(0,0\\right)$, the corresponding codeword is $\\left(1,0,1,0\\right)$, given $a=1$."
+      },
+      "explanations": {
+        "a": "For $\\left(1,0\\right)$ and $a=0$ codeword be $\\left(1,0,1,0\\right)$",
+        "b": "For $\\left(1,1\\right)$ and $a=1$ codeword be $\\left(1,0,0,1\\right)$",
+        "c": "Correct option",
+        "d": "For $\\left(0,0\\right)$ and $a=0$ or $1$ codeword be $\\left(0,0,0,0\\right)$"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
