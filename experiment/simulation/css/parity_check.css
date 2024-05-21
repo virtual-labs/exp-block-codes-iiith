@@ -142,3 +142,15 @@
 
   margin: 1em;
 }
+
+.table, .th, .td{
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+
+.blank_row
+{
+    height: 10px !important; /* overwrites any other rules */
+    background-color: #FFFFFF;
+}

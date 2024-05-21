@@ -62,7 +62,7 @@ function check2() {
         obs1.style.color = "black";
     } else {
         const selectedIds = Array.from(selectedCodewords).map(button => button.id);
-        const correctIds = ["w1", "w2", "w3", "w5", "w7", "w8", "w12", "w13"];
+        const correctIds = ["w1", "w2", "w3", "w5", "w9", "w10", "w12", "w13"];
         //const isCorrect = selectedIds.every(id => correctIds.includes(id));
         const isCorrect = correctIds.every(id => selectedIds.includes(id)) && selectedIds.length === correctIds.length;
 

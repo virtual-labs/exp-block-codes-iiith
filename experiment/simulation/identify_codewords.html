@@ -54,8 +54,8 @@
                     <div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
                         <ul style="list-style: disc;">
                             <b>Quick theory overview:</b>
-                            <li>
-                                A linear code \( C \), \( [n,k] \), have systematic generator matrix \( G = [ I | P ]\), parity check matrix \(H = [P^T | I] \). Length of codeword is \(n\) and dimension of code is \(k\).
+							<li>
+                                An \( [n,k] \) linear block code \( \mathcal{C} \) with parity-check matrix \( H \). An arbitrary codeword \( \textbf{c} \in \mathcal{C} \) inner product with any row of \( H \) always results in \(0\). \[ \textbf{c}H^T = 0 \].
                             </li>
                         </ul>
                         <br>
@@ -64,7 +64,13 @@
                             <b>Procedure:</b>
 
                             <li>
-                                Select all possible codewords correspond to correspond parity-check matrix \(H\) and click the <b>submit</b> button.
+                                Select all possible codewords corresponding to parity-check matrix \(H\) and click the <b>Submit</b> button.
+                            </li>
+                            <li>
+                                Click <b>Reset</b> button to reset all your selected choices and restart.
+                            </li>
+                            <li>
+                                Click <b>Next</b> button to go to next exercise.
                             </li>
                         </ul>
                     </div>
@@ -79,7 +85,7 @@
 			<div class="column is-11-desktop is-12-tablet is-12-mobile">
 				<div class="v-datalist-container components-list">
 					<br>
-					<p> All set of codeword for C whose parity-check matrix
+					<p> Please select all possible codewords corresponding to code \( \mathcal{C} \) whose parity-check matrix is 
 						\(H \)=
 						\(\begin{bmatrix}
 						0 & 0 & 1 & 0 & 1\\
@@ -100,31 +106,31 @@
 
 					<table align="center">
 						<tr>
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a1" onClick="change(id)">
 									<font size="+2">[</font> 0 0 0 0 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a2" onClick="change(id)">
 									<font size="+2">[</font> 0 0 1 0 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a3" onClick="change(id)">
 									<font size="+2">[</font> 1 1 0 1 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a4" onClick="change(id)">
 									<font size="+2">[</font> 0 1 1 0 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a5" onClick="change(id)">
 									<font size="+2">[</font> 0 1 0 1 1 <font size="+2">]</font>
 								</button>
@@ -133,31 +139,31 @@
 
 						<tr>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a6" onClick="change(id)">
 									<font size="+2">[</font> 1 0 0 1 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a7" onClick="change(id)">
 									<font size="+2">[</font> 1 0 1 1 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a8" onClick="change(id)">
 									<font size="+2">[</font> 1 0 0 1 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a9" onClick="change(id)">
 									<font size="+2">[</font> 1 1 1 1 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="a10" onClick="change(id)">
 									<font size="+2">[</font> 1 0 1 1 1 <font size="+2">]</font>
 								</button>
@@ -188,7 +194,7 @@
 			<div class="column is-11-desktop is-12-tablet is-12-mobile">
 				<div class="v-datalist-container components-list">
 					<br>
-					<p> All set of codeword for C whose parity-check matrix
+					<p> Please select all possible codewords corresponding to code \( \mathcal{C} \) whose parity-check matrix is
 						\(H \)=
 						\(\begin{bmatrix}
 						1 & 1 & 0 & 1 & 0 & 0 & 0\\
@@ -210,100 +216,100 @@
 
 					<table align="center">
 						<tr>
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w1" onClick="change(id)">
 									<font size="+2">[</font> 1 0 0 1 0 1 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w2" onClick="change(id)">
-									<font size="+2">[</font> 0 1 0 1 1 1 0<font size="+2">]</font>
+									<font size="+2">[</font> 0 1 0 1 1 1 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w3" onClick="change(id)">
 									<font size="+2">[</font> 0 0 0 0 0 0 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w4" onClick="change(id)">
 									<font size="+2">[</font> 1 1 1 0 0 0 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 						</tr>
 						<tr>
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w5" onClick="change(id)">
 									<font size="+2">[</font> 0 0 1 0 1 1 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w6" onClick="change(id)">
 									<font size="+2">[</font> 1 1 0 1 0 1 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w7" onClick="change(id)">
 									<font size="+2">[</font> 1 1 0 0 1 0 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w8" onClick="change(id)">
 									<font size="+2">[</font> 1 0 1 1 1 0 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 						</tr>
 						<tr>
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w9" onClick="change(id)">
 									<font size="+2">[</font> 1 1 0 0 1 0 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w10" onClick="change(id)">
 									<font size="+2">[</font> 1 0 1 1 1 0 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w11" onClick="change(id)">
 									<font size="+2">[</font> 1 1 1 0 1 0 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w12" onClick="change(id)">
 									<font size="+2">[</font> 0 1 1 1 0 0 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 						</tr>
 						<tr>			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w13" onClick="change(id)">
 									<font size="+2">[</font> 1 1 1 0 0 1 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w14" onClick="change(id)">
 									<font size="+2">[</font> 0 1 1 0 1 1 0 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w15" onClick="change(id)">
 									<font size="+2">[</font> 1 1 1 1 1 1 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w16" onClick="change(id)">
 									<font size="+2">[</font> 0 0 0 0 0 1 0 <font size="+2">]</font>
 								</button>
