@@ -48,7 +48,7 @@ var randomGeneratorMatrix = selectRandomGeneratorMatrix();
 var dim = randomGeneratorMatrix.dim;
 var codelength = randomGeneratorMatrix.matrix[0].length;
 
-document.getElementById("generatorMatrix").innerHTML = " \\(A \\)= " + formatMatrix(randomGeneratorMatrix.matrix);
+document.getElementById("generatorMatrix").innerHTML = "Consider the matrix \\(A \\)= " + formatMatrix(randomGeneratorMatrix.matrix) + " over \\( \\mathbb{F}_2 \\). ";
 // document.getElementById("matrixInfo").innerHTML = "Dimensions: " + randomGeneratorMatrix.dim.join("x") + ", Length: " + randomGeneratorMatrix.length;
 
 
@@ -75,7 +75,8 @@ function initial() {
     codelength = randomGeneratorMatrix.matrix[0].length;
 
     const generatorMatrixElement = document.getElementById("generatorMatrix");
-    generatorMatrixElement.innerHTML = " \\(A \\)= " + formatMatrix(randomGeneratorMatrix.matrix);
+    generatorMatrixElement.innerHTML = "Consider the matrix \\(A \\)= " + formatMatrix(randomGeneratorMatrix.matrix) + " over \\( \\mathbb{F}_2 \\). ";
+    // generatorMatrixElement.innerHTML = " \\(A \\)= " + formatMatrix(randomGeneratorMatrix.matrix);
 
     // Trigger MathJax to typeset the updated content
     MathJax.typeset([generatorMatrixElement]);
@@ -151,19 +152,28 @@ function notValidGeneratorMatrix() {
 }
 
 function checkRate() {
-    const dimensionEntered = document.getElementById("dimensionInput");
+    const dimensionEntered = document.getElementById("dimensionEntered");
     const rateEntered = document.getElementById("rateEntered");
 
     const dimensionInput = parseInt(document.getElementById("dimensionInput").value);
     const codelengthInput = parseFloat(document.getElementById("codelengthInput").value);
+
+    const rateForm = document.getElementById("rateForm");
+
+    // remove the dimensionEntered message
+    dimensionEntered.innerHTML = "";
+    // dimensionEntered.style.display = "none";s
 
     if (dimensionInput == dim && codelengthInput == codelength) {
         rateEntered.innerHTML = "<b>Correct Answer!!!</b>";
         rateEntered.style.color = "green";
     }
     else {
+
+        rateForm.reset();
+
         if (rateEntered.innerHTML == "<b>Incorrect. Please try again.</b>") {
-            rateEntered.innerHTML = "<b>Incorrect. Please try again.</b>";
+            rateEntered.innerHTML = "<b>Incorrect again!!. Please try again.</b>";
             rateEntered.style.color = "red";
             return;
         }
@@ -172,6 +182,8 @@ function checkRate() {
             rateEntered.style.color = "red";
             return;
         }
+
+
     }
 
 }

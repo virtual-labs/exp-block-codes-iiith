@@ -89,7 +89,7 @@ function check() {
 
     if ((b1 == c1) && (b2 == c2) && (b3 == c3) && (b4 == c4) && (b5 == c5) && (b6 == c6)) {
 
-        cEntered.innerHTML = "<b>Yay! You should have computed \\(\\boldsymbol{m}G\\) and got the right codeword!</b>";
+        cEntered.innerHTML = "<b>Yay! You should have computed m &bull; G and got the right codeword!</b>";
         cEntered.style.color = "green";
 
         // part1.style.display = "none";

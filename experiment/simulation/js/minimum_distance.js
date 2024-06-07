@@ -50,6 +50,8 @@ function submitCodeword() {
     let hammingWeightEntered = document.getElementById('hammingWeight').value;
     const helpPrompt = document.getElementById('helpPrompt');
 
+    console.log(hammingWeightEntered == '', hammingWeightEntered === 0);
+
     // check if the codeword is valid
     let candidates = [];
     for (let i = 0; i < Math.pow(2, bits.length); i++) {
@@ -91,7 +93,13 @@ function submitCodeword() {
 
     if (isCorrect) {
 
-        if (!alreadyExists && hammingWeight == hammingWeightEntered) {
+        if (hammingWeightEntered == '') {
+            // Display an error message
+            helpPrompt.innerText = 'Please enter the Hamming weight of the codeword.';
+            helpPrompt.style.color = 'red';
+        }
+
+        else if (!alreadyExists && hammingWeight == hammingWeightEntered) {
             // Clear the error message
             helpPrompt.innerText = 'You have entered the correct codeword and the Hamming weight.';
             helpPrompt.style.color = 'green';
@@ -101,7 +109,8 @@ function submitCodeword() {
 
             document.getElementById('enteredCodewords').innerText = '{' + setOfCodewords.map((codeword) => '(' + codeword.join('') + ')').join(', ') + '}';
 
-        } else if (!alreadyExists && hammingWeight != hammingWeightEntered) {
+        } 
+        else if (!alreadyExists && hammingWeight != hammingWeightEntered) {
             // Display an error message
             helpPrompt.innerText = 'Oops! The Hamming weight of the codeword is not ' + hammingWeightEntered + '.' + ' Please try again.';
             helpPrompt.style.color = 'red';
