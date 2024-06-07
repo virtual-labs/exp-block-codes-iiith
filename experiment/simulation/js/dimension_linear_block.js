@@ -61,6 +61,12 @@ function formatMatrix(matrix) {
     return "\\(\\begin{bmatrix} " + matrix.map(row => row.join(" & ")).join("\\\\ ") + " \\end{bmatrix} \\)";
 }
 
+function reset() {
+    const dimensionEntered = document.getElementById("dimensionEntered");
+    dimensionEntered.innerHTML = "";
+
+    initial();
+}
 
 function initial() {
 
@@ -79,10 +85,9 @@ function initial() {
     const generatorForm = document.getElementById("generatorForm");
     const rateForm = document.getElementById("rateForm");
 
-    const dimensionEntered = document.getElementById("dimensionEntered");
     const rateEntered = document.getElementById("rateEntered");
 
-    dimensionEntered.innerHTML = "Try with new matrix";
+    // dimensionEntered.innerHTML = "Try with new matrix";
     rateEntered.innerHTML = "";
 
     isGeneratorQuestion.style.display = "block";
@@ -99,7 +104,7 @@ function yesValidGeneratorMatrix() {
     const isGeneratorQuestion = document.getElementById("isGeneratorQuestion");
     if (dimensionEntered == dim) {
         if (dim === randomGeneratorMatrix.matrix.length) {
-            document.getElementById("dimensionEntered").innerHTML = "<b>Correct Answer!!!</b>";
+            document.getElementById("dimensionEntered").innerHTML = "<b>Yay! Your answer is correct. This is indeed a true generator matrix. It has rank " + parseInt(dim) + " (full row-rank, i.e., all rows are linearly independent), and has " + parseInt(codelength) + " columns. Now you need to enter the rate of the code. </b>";
             document.getElementById("dimensionEntered").style.color = "green";
 
             isGeneratorQuestion.style.display = "none";
@@ -120,6 +125,7 @@ function notValidGeneratorMatrix() {
     const dimensionEntered = parseInt(document.getElementById("dimensionInput").value);
     const isGeneratorQuestion = document.getElementById("isGeneratorQuestion");
 
+
     if (dimensionEntered == dim) {
         if (dimensionEntered != randomGeneratorMatrix.matrix.length) {
             document.getElementById("dimensionEntered").innerHTML = "<b>Correct Answer!!!</b>";
@@ -127,6 +133,10 @@ function notValidGeneratorMatrix() {
 
             // isGeneratorQuestion.style.display = "none";
             // rateQuestion.style.display = "block";
+
+
+
+            document.getElementById("dimensionEntered").innerHTML = "<b>Yes, your answer that the previously showed matrix is not a generator matrix, is absolutely correct! Now, look at this new matrix, and answer the question again.</b>";
 
             initial();
         } else {
