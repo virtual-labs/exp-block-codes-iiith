@@ -10,10 +10,10 @@
         "d": "$\\left(0,0,0,1,0,0\\right)$"
       },
       "explanations": {
-        "a": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be (1+1)~ \\mod2 = 0 and third position should be (1+0)~ \\mod2 = 1.",
-        "b": "Correct Answer!, the mod2 sum of each coordinate ((1+1)~ \\mod2,(0+0)~ \\mod2,(1+0)~ \\mod2,(0+1)~ \\mod2,(1+1)~ \\mod2,(0+1)~ \\mod2) = (0,0,1,1,0,1).",
-        "c": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be (1+1)~ \\mod2 = 0 and third position should be (0+1)~ \\mod2 = 1.",
-        "d": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be (1+1)~ \\mod2 = 0 and third position should be (0+1)~ \\mod2 = 1."
+        "a": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be $(1+1)\\mod2 = 0$ and third position should be $(1+0)\\mod2 = 1$.",
+        "b": "Correct Answer!, the modulo-2 sum of each coordinate $((1+1)\\mod2,(0+0)\\mod2,(1+0)\\mod2,(0+1)\\mod2,(1+1)\\mod2,(0+1)\\mod2) = (0,0,1,1,0,1)$.",
+        "c": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be $(1+1)\\mod2 = 0$ and third position should be $(0+1)\\mod2 = 1$.",
+        "d": "Please think about the modulo-2 sum of bits in each coordinate in the two vectors. For instance, the first position should be $(1+1)\\mod2 = 0$ and third position should be $(0+1)\\mod2 = 1$."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 1 & 1 & 1 \\end{bmatrix}$"
       },
       "explanations": {
-        "a": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(1,1)}$ position should be $(1\\times 1 + 0\\times 0 + 1\\times 1)~ \\mod2 = 0$ and $AB_{(2,2)}$ position should be $(1\\times 1 + 1\\times 0 + 0\\times 0)~ \\mod2 = 1$.",
+        "a": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(1,1)}$ position should be $(1\\times 1 + 0\\times 0 + 1\\times 1)\\mod2 = 0$ and $AB_{(2,2)}$ position should be $(1\\times 1 + 1\\times 0 + 0\\times 0)\\mod2 = 1$.",
         "b": "Correct Answer! the matrix we get after product is $\\begin{bmatrix} (1\\times 1 + 0\\times 0 + 1\\times 0)\\mod2 & (1\\times 1 + 0\\times 0 + 0\\times 0)\\mod2 & (1\\times 0 + 0\\times 1 + 1\\times 1)\\mod2 \\\\ (1\\times 1 + 1\\times 0 + 0\\times 1)\\mod2 & (1\\times 1 + 1\\times 0 + 1\\times 0)\\mod2 & (1\\times 0 + 1\\times 1 + 1\\times 1)\\mod2 \\\\ (0\\times 1 + 1\\times 0 + 1\\times 1)\\mod2 & (0\\times 1 + 1\\times 0 + 1\\times 0)\\mod2 & (0\\times 0 + 1\\times 1 + 1\\times 1)\\mod2 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
-        "c": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(3,2)}$ position should be $(0\\times 1 + 1\\times 0 + 1\\times 0)~ \\mod2 = 0.$",
-        "d": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(2,2)}$ position should be $(1\\times 1 + 1\\times 0 + 0\\times 0)~ \\mod2 = 1.$"
+        "c": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(3,2)}$ position should be $(0\\times 1 + 1\\times 0 + 1\\times 0)\\mod2 = 0.$",
+        "d": "Please think about the modulo-2 sum of bits in each coordinate in the two matrices. For instance, the $AB_{(2,2)}$ position should be $(1\\times 1 + 1\\times 0 + 0\\times 0)\\mod2 = 1.$"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -44,10 +44,10 @@
         "d": "$\\left(0,1,0\\right)$"
       },
       "explanations": {
-        "a": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 3 position should be (1+1+0+1) \\mod2 = 1.",
-        "b": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 2 position should be (0 + 0 + 0 + 1) \\mod2 = 1.",
-        "c": "Correct Answer! sum of four tuple is like ((1 + 0 + 1 + 0) \\mod2,(0 + 0 + 0 + 1) \\mod2,(1 + 1 + 0 + 1) \\mod2) = (0,1,1)",
-        "d": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 3 position should be (1+1+0+1) \\mod2 = 1."
+        "a": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 3 position should be $(1+1+0+1) \\mod2 = 1$.",
+        "b": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 2 position should be $(0 + 0 + 0 + 1) \\mod2 = 1$.",
+        "c": "Correct Answer! sum of four tuple is like $((1 + 0 + 1 + 0) \\mod2,(0 + 0 + 0 + 1) \\mod2,(1 + 1 + 0 + 1) \\mod2) = (0,1,1)$",
+        "d": "Please think about the modulo-2 sum of bits in each coordinate in the four vectors. For instance, the 3 position should be $(1+1+0+1) \\mod2 = 1$."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -78,9 +78,9 @@
         "d": "5"
       },
       "explanations": {
-        "a": "Correct Answer! Row analysis: All 4 rows are linear independent. Column analysis: Since second column is all zero thus rank is less than equal to 4. Rest 4 columns are linear independt.",
-        "b": "Please think about including 1 more linear independt rows or column.",
-        "c": "Please think about including 2 more linear independt rows or column.",
+        "a": "Correct Answer! Row analysis: All 4 rows are linearly independent. Column analysis: Since second column is all zero thus rank is less than equal to 4. Rest 4 columns are linear independent.",
+        "b": "Please think about including 1 more linear independent rows or columns.",
+        "c": "Please think about including 2 more linear independent rows or columns.",
         "d": "Number of rows is 4 then surely $rank(R) \\leq 4$"
       },
       "correctAnswer": "a",
