@@ -64,13 +64,13 @@
                             <b>Procedure:</b>
 
                             <li>
-                                Select all possible codewords corresponding to parity-check matrix \(H\) and click the <b>Submit</b> button.
+                                Select all possible codewords corresponding to the given parity-check matrix \(H\) and click the <b>Submit</b> button.
                             </li>
                             <li>
                                 Click <b>Reset</b> button to reset all your selected choices and restart.
                             </li>
                             <li>
-                                Click <b>Next</b> button to go to next exercise.
+                                Click the <b>Next</b> button to get an exercise for selecting all the codeword of the parity-check matrix of dimension \(4 \times 7\) and click the <b>Previous</b> to do the same with the parity-check matrix of dimension \(3 \times 5\).
                             </li>
                         </ul>
                     </div>
@@ -80,7 +80,7 @@
     </div>
     <br>
 	
-	<section id="ex1">
+	<section id="ex1" class="experiment">
 		<div class="columns is-centered">
 			<div class="column is-11-desktop is-12-tablet is-12-mobile">
 				<div class="v-datalist-container components-list">
@@ -172,9 +172,9 @@
 					</table>
 					<br>
 
-					<button class="v-button" role="button" onClick="check1()"> Submit </button>
-					<button class="v-button" role="button" onClick="deselect1()"> Reset </button>
-					<button class="v-button" role="button" onclick="pa2()"> Next </button>
+					<button id="submitBtn1" class="v-button" role="button" onClick="check1()"> Submit </button>
+					<button id="resetBtn1" class="v-button" role="button" onClick="deselect1()"> Reset </button>
+					<button id="nextBtn1" class="v-button" role="button" onclick="pa2()"> Next </button>
 				</div>
 			</div>
 
@@ -189,7 +189,7 @@
 		</div>
 	</section>
 
-	<section id="ex2" style="display: none;">
+	<section id="ex2" class="experiment" style="display: none;">
 		<div class="columns is-centered">
 			<div class="column is-11-desktop is-12-tablet is-12-mobile">
 				<div class="v-datalist-container components-list">
@@ -255,13 +255,13 @@
 			
 							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w7" onClick="change(id)">
-									<font size="+2">[</font> 1 1 0 0 1 0 1 <font size="+2">]</font>
+									<font size="+2">[</font> 1 1 0 0 1 1 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 			
 							<td style="padding: 15px;"><div class="code-word">
 								<button class="button-2" id="w8" onClick="change(id)">
-									<font size="+2">[</font> 1 0 1 1 1 0 0 <font size="+2">]</font>
+									<font size="+2">[</font> 1 0 1 1 1 0 1 <font size="+2">]</font>
 								</button>
 							</div></td>
 						</tr>
@@ -320,9 +320,9 @@
 	
 					<br>
 	
-					<button class="v-button" role="button" onClick="check2()"> Submit </button>
-					<button class="v-button" role="button" onClick="deselect2()"> Reset </button>
-					<button class="v-button" role="button" onclick="pa1()"> Previous </button>
+					<button id="submitBtn2" class="v-button" role="button" onClick="check2()"> Submit </button>
+					<button id="resetBtn2" class="v-button" role="button" onClick="deselect2()"> Reset </button>
+					<button id="prevBtn2" class="v-button" role="button" onclick="pa1()"> Previous </button>
 				</div>
 			</div>
 	
