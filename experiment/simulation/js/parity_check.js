@@ -10,19 +10,39 @@ function check1() {
     if (isNaN(a1) || isNaN(a2) || isNaN(a3) || isNaN(a4) || isNaN(a5) || isNaN(a6) ||
         a1 < 0 || a1 > 9 || a2 < 0 || a2 > 9 || a3 < 0 || a3 > 9 ||
         a4 < 0 || a4 > 9 || a5 < 0 || a5 > 9 || a6 < 0 || a6 > 9) {
-        document.getElementById("obs1").innerHTML = "Enter valid single digit integer values";
+        document.getElementById("obs1").innerHTML = "Please enter valid positive integers into the boxes.";
         document.getElementById("obs1").style.color = "black";
         return;
     }
 
-    // Check if values match the correct answer
-    if (a1 === 3 && a2 === 6 && a3 === 3 && a4 === 3 && a5 === 3 && a6 === 3) {
-        document.getElementById("obs1").innerHTML = "Correct answer for example 1";
-        document.getElementById("obs1").style.color = "green";
-    } else {
-        document.getElementById("obs1").innerHTML = "Wrong Answer for example 1";
-        document.getElementById("obs1").style.color = "red";
-    }
+    switch (true) {
+            
+        case (a1 === 3 && a2 === 6 && a3 === 3 && a4 === 3 && a5 === 3 && a6 === 3):
+            document.getElementById("obs1").innerHTML = "Correct Answer <br> Click Next button to go to second sub-experiment.";
+            document.getElementById("obs1").style.color = "green";
+            break;
+
+        case (a1 !== 3 || a2 !== 6):
+            document.getElementById("obs1").innerHTML = "The dimension of parity-check matrix \(H\) is incorrect.<br> Please go through the Instructions, and try again.";
+            document.getElementById("obs1").style.color = "blue";
+            break;
+
+        case (a5 !== 3 || a6 !== 3):
+            document.getElementById("obs1").innerHTML = "The dimension of sub-matrix \(P^T\) is incorrect.<br> Please go through the Instructions, and try again.";
+            document.getElementById("obs1").style.color = "blue";
+            break;
+    
+        case (a3 !== 3 || a4 !== 3):
+            document.getElementById("obs1").innerHTML = "The dimension of identity matrix \(I_{n-k}\) is incorrect.<br> Please go through the Instructions, and try again.";
+            document.getElementById("obs1").style.color = "blue";
+            break;
+    
+        default:
+            document.getElementById("obs1").innerHTML = "Incorrect Answer <br> Please go through the Instructions, and try again.";
+            document.getElementById("obs1").style.color = "red";
+            break;
+    }    
+
 }
 
 function check2() {
@@ -46,10 +66,10 @@ function check2() {
 
     // Check if all required codewords are selected
     if (m1 == 1 && m2 == 0 && m3 == 1 && m4 == 1 && m5 == 1 && m6 == 0 && m7 == 0 && m8 == 1 && m9 == 1) {
-        obs2.innerHTML = "<b>Correct Answer for Experiment 1!!!</b>";
+        obs2.innerHTML = "<b>Correct Answer</b>";
         obs2.style.color = "green";
     } else {
-        obs2.innerHTML = "<b>Wrong Answer for Experiment 1!!!</b>";
+        obs2.innerHTML = "<b>Incorrect Answer <br> Please go through the Instructions, and try again.</b>";
         obs2.style.color = "red";
     }
 }
