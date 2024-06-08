@@ -11,17 +11,17 @@
         "e": "None"
       },
       "explanations": {
-        "a": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
-        "b": "Write all codewords and select all possible linear independent codewords as rows of $H$.", 
-        "c": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
-        "d": "Write all codewords and select all possible linear independent codewords as rows of $H$.",
-        "e": "All options are valid parity-check matrix of given generator matrix."
+        "a": "For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
+        "b": "For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.", 
+        "c": "For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
+        "d": "For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
+        "e": "Yes, this is the right answer! All options are valid parity-check matrix of given generator matrix."
       },
       "correctAnswer": "e",
       "difficulty": "intermediate"
     },
     {
-      "question": "For message $\\textbf{m} = \\left(1,0,0,1\\right)$ find correct codeword if generator matrix is $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\\\ 1 & 0 & 0 & 0 & 0 & 0 \\end{bmatrix}$. ",
+      "question": "For the message $\\textbf{m} = \\left(1,0,0,1\\right)$ find correct codeword if generator matrix is $G = \\begin{bmatrix} 1 & 0 & 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 1 \\\\ 1 & 1 & 0 & 1 & 1 & 0 \\\\ 1 & 0 & 0 & 0 & 0 & 0 \\end{bmatrix}$. ",
       "answers": {
         "a": "$\\left(0,0,1,0,1,1\\right)$",
         "b": "$\\left(1,0,1,0,1,1\\right)$",
