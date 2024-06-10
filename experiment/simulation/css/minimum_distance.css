@@ -11,7 +11,7 @@
 
 
 /* Media Queries */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     .codeword-buttons {
         flex-direction: row;
         margin-bottom: 1em;
