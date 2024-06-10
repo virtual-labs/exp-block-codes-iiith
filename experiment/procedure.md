@@ -74,5 +74,57 @@ There are three tasks in this sub-experiment.
     <img src="images/exp1_0_2_minimumdistance_input.png" alt="alt text" width="75%"/><br>
     - Click on **Check** to verify the correctness of the minimum distance. The Observation box will display the feedback message accordingly.
 
-    
 
+## Sub-Experiment 2: Parity Check Matrix
+
+There are two tasks in this sub-experiment.
+
+### Task 1: Structure of the parity-check matrix
+
+1. **Find Dimensions of Matrices**: Enter the dimension of the matrices shown in the input boxes as row x column as shown in the figure below. 
+    <div style="text-align: center;"> <img src="images/exp1_2_1ex1.png" alt="alt text" width="75%"/> </div>
+
+2. **Verify Matrices**: To check the dimensions of matrices are correct. <br>
+    <div style="text-align: center;"> <img src="images/exp1_2_res1.png" alt="alt text" width="30%"/> </div> <br>
+    - Click on **Submit** and check the dimensions of the matrices are valid.
+    - Click on **Reset** to clear all the box entries.
+    - Click on **Next** to go to the next sub-experiment.
+    - The observation box will display the feedback message accordingly. <br>
+      <div style="text-align: center;"> 
+      <img src="images/exp1_2_1obs1.1.png" alt="alt text" width="25%"/> 
+      <img src="images/exp1_2_1obs1.2.png" alt="alt text" width="25%"/>
+      <img src="images/exp1_2_1obs1.3.png" alt="alt text" width="25%"/>
+      </div>
+
+3. **Fill out the sub-matrix entries**: For given blue 3x3 boxes fill out the bits into it.<br>
+    <img src="images/exp1_2_1ex1.png" alt="alt text" width="25%"/><br>
+ To check the dimensions of matrices are correct or not. <br>
+    <div style="text-align: center;"> <img src="images/exp1_2_res2.png" alt="alt text" width="30%"/> </div> <br>
+    - Click on **Submit** to verify the filled entries are right or wrong.
+    - Click on **Reset** to clear all the box entries.
+    - Click on **Previous** to go to the previous sub-experiment.
+    - The observation box will display the feedback message accordingly. <br>
+      <div style="text-align: center;"> 
+      <img src="images/exp1_0_0_obs.png" alt="alt text" width="25%"/> 
+      <img src="images/exp1_0_0_incorrect.png" alt="alt text" width="25%"/>
+      <img src="images/exp1_0_0_correct.png" alt="alt text" width="25%"/>
+      </div>
+      
+
+### Task 2: Identify Codewords
+
+1. **Select Codewords**: Select the boxes given. After selecting, it will turn green, and it will turn back to gray boxes for deselecting. <br>
+    <img src="images/exp1_2_2ex1.png" alt="alt text" width="75%"/>
+    <img src="images/exp1_2_2ex2.png" alt="alt text" width="75%"/><br>
+ To check the dimensions of matrices are correct or not. <br>
+    <div style="text-align: center;"> <img src="images/exp1_2_res1.png" alt="alt text" width="30%"/> <div style="text-align: center;"> <img src="images/exp1_2_res2.png" alt="alt text" width="30%"/>  </div> <br>
+    - Click on **Submit** to verify the filled entries are right or wrong.
+    - Click on **Reset** to clear all the box entries.
+    - Click on **Next** to go to the next sub-experiment.
+    - Click on **Previous** to go to the previous sub-experiment.
+    - The observation box will display the feedback message accordingly. <br>
+      <div style="text-align: center;"> 
+      <img src="images/exp1_2_2obs1.png" alt="alt text" width="25%"/> 
+      <img src="images/exp1_2_2obs2.png" alt="alt text" width="25%"/>
+      <img src="images/exp1_2_2obs3.png" alt="alt text" width="25%"/>
+      </div>
