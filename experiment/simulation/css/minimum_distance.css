@@ -11,7 +11,7 @@
 
 
 /* Media Queries */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
     .codeword-buttons {
         flex-direction: row;
         margin-bottom: 1em;
@@ -19,7 +19,7 @@
 
     /* scale the codeword buttons according to the screen size */
     .codeword-buttons .bit, .field .bit {
-        height: 10%;
+        height: auto;
         width: 10%;
     }
 }
