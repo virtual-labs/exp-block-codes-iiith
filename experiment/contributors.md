@@ -11,7 +11,7 @@
 | 2 | Aditya Siddheshwar | aditya.siddheshwar@research.iiit.ac.in | IIIT-Hyderabad 
 | 3 | Chandan Anand | chandan.anand@iiit.ac.in | IIIT-Hyderabad 
 | 4 | Jayesh Seshadri | jayesh.seshadri@research.iiit.ac.in | IIIT-Hyderabad 
-| 5 | Vudatha Varsha | vudathavarsha@gmail.com | institute 
+<!-- | 5 | Vudatha Varsha | vudathavarsha@gmail.com | institute 
 | 6 | Kommineni Varun | varunchowdary1069@gmail.com | institute 
 | 7 | Talha Abdur Raheem | talharaheem193@gmail.com | institute 
-| 8 | Saqid Aqeel | saquibaqeel@gmail.com | institute 
+| 8 | Saqid Aqeel | saquibaqeel@gmail.com | institute  -->
