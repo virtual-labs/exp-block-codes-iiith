@@ -1,7 +1,13 @@
 var m1, m2, m3;
 //test comment
 
-var bits = [0, 0, 0]; // Initial bit values
+var bits = [Math.floor(Math.random() * 2), Math.floor(Math.random() * 2), Math.floor(Math.random() * 2)]; // Random initial bit values
+
+// Update the text of the button elements accordingly
+document.getElementById('msgBit1').innerText = bits[0];
+document.getElementById('msgBit2').innerText = bits[1];
+document.getElementById('msgBit3').innerText = bits[2];
+
 var codewordBits = [0, 0, 0, 0, 0, 0]; // Initial codeword bit values
 var receivedCodewordBits = [0, 0, 0, 0, 0, 0]; // Initial transmitted codeword bit values
 var receivedCodewordBitsEntered = [0, 0, 0, 0, 0, 0]; // Initial received codeword bit values
@@ -83,8 +89,9 @@ function check() {
 
     if ((b1 == c1) && (b2 == c2) && (b3 == c3) && (b4 == c4) && (b5 == c5) && (b6 == c6)) {
 
-        cEntered.innerHTML = "<b>Correct Answer!!!</b>";
+        cEntered.innerHTML = "<b>Yay! You should have computed m &bull; G and got the right codeword!</b>";
         cEntered.style.color = "green";
+
         // part1.style.display = "none";
         // part2.style.display = "block";
         // part3.style.display = "block";
@@ -92,14 +99,15 @@ function check() {
     }
 
     else {
-        if (cEntered.innerHTML == "<b>Wrong Answer :(</b>") {
+        let firstWrongText = "<b>Check the Instructions above for understanding how to get the right answers. </b>";
+        if (cEntered.innerHTML == firstWrongText) {
             cEntered.innerHTML = "<b>Wrong Again :(</b>";
             cEntered.style.color = "red";
             return;
         }
 
         else {
-            cEntered.innerHTML = "<b>Wrong Answer :(</b>";
+            cEntered.innerHTML = firstWrongText;
             cEntered.style.color = "red";
             return;
         }

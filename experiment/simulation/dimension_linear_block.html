@@ -32,19 +32,19 @@
                     <ul>
                         <li class="is-active" id="Task1">
                             <a>
-                                Dimension of Linear Block Codes
+                                Dimension and Rate of Linear Block Codes
                             </a>
                         </li>
 
                         <li id="Task2" onclick="window.location.href = 'encoding.html';">
                             <a>
-                                Encoding
+                                Encoding of Block Codes
                             </a>
                         </li>
 
                         <li id="Task3" onclick="window.location.href = 'minimum_distance.html';">
                             <a>
-                                Minimum Distance
+                                Minimum Distance of Block Codes
                             </a>
                         </li>
 
@@ -74,7 +74,16 @@
                             </li>
 
                             <li>
-                                Click on <b>Yes!</b> if the matrix is a valid generator matrix, else click on <b>No!</b>.
+                                Click on <b>Yes!</b> if the matrix is a valid generator matrix, else click on <b>No!</b>. 
+                            </li>
+
+
+                            <li>
+                                We will keep on displaying new matrices until you get a matrix which is actually a true generator matrix, and you get the answer correct for that question.
+                            </li>
+
+                            <li>
+                                The next question will then be on the rate of such a code, which is given as the ratio of the dimension to the blocklength (length of the code).
                             </li>
 
                         </ul>
@@ -100,14 +109,17 @@
 
                 <section id="isGeneratorQuestion">
                     <form action="" method="get" id="generatorForm" onsubmit="return false">
-                        Is the given matrix a valid generator matrix?
                         <br>
                         <div>
-                            <label for="dimensionInput">Dimension of rowspace:</label>
+                            <label for="dimensionInput">Enter the dimension of the rowspace:</label>
                             <input type="number" id="dimensionInput" style="width: 2em;">
                         </div>
                     </form>
                     <br>
+                    Based on your answer above, is the displayed matrix a valid generator matrix of a linear code? Click Yes or No.
+                    <br>
+                    <br>
+
                     <button class="v-button" onclick="yesValidGeneratorMatrix()" form="form1">Yes!</button>
                     <button class="v-button" onclick="notValidGeneratorMatrix()" form="form1">No!</button>
 
@@ -125,13 +137,14 @@
                                 <input type="number" id="dimensionInput" placeholder="dimension" style="width: 10em;">
                                 <!-- Adjust input width as needed -->
                             </div>
-                            <div class="denominator"><input type="number" id="codelengthInput" placeholder="length of codeword" style="width: 10em;"></div>
+                            <div class="denominator">
+                                <input type="number" id="codelengthInput" placeholder="length of codeword" style="width: 10em;"></div>
                         </span>
 
                     </form>
                     <br>
                     <button class="v-button" onclick="checkRate()" form="form2">Check</button>
-                    <button class="v-button" onclick="initial()">Reset</button>
+                    <button class="v-button" onclick="reset()">Reset</button>
                 </section>
 
             </div>

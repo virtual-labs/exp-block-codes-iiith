@@ -54,8 +54,8 @@
                     <div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
                         <ul style="list-style: disc;">
                             <b>Quick theory overview:</b>
-                            <li>
-                                A linear code \( C \), \( [n,k] \), have systematic generator matrix \( G = [ I | P ]\), parity check matrix \(H = [P^T | I] \). Length of codeword is \(n\) and dimension of code is \(k\).
+							<li>
+                                An \( [n,k] \) linear block code \( \mathcal{C} \) with parity-check matrix \( H \). An arbitrary codeword \( \textbf{c} \in \mathcal{C} \) inner product with any row of \( H \) always results in \(0\), \[ H\textbf{c}^T = 0 .\]
                             </li>
                         </ul>
                         <br>
@@ -64,7 +64,13 @@
                             <b>Procedure:</b>
 
                             <li>
-                                Select all possible codewords correspond to correspond parity-check matrix \(H\) and click the <b>submit</b> button.
+                                Select all possible codewords corresponding to the given parity-check matrix \(H\) and click the <b>Submit</b> button.
+                            </li>
+                            <li>
+                                Click <b>Reset</b> button to reset all your selected choices and restart.
+                            </li>
+                            <li>
+                                Click the <b>Next</b> button to get an exercise for selecting all the codeword of the parity-check matrix of dimension \(4 \times 7\) and click the <b>Previous</b> to do the same with the parity-check matrix of dimension \(3 \times 5\).
                             </li>
                         </ul>
                     </div>
@@ -74,12 +80,12 @@
     </div>
     <br>
 	
-	<section id="ex1">
+	<section id="ex1" class="experiment">
 		<div class="columns is-centered">
 			<div class="column is-11-desktop is-12-tablet is-12-mobile">
 				<div class="v-datalist-container components-list">
 					<br>
-					<p> All set of codeword for C whose parity-check matrix
+					<p> Please select all possible codewords corresponding to code \( \mathcal{C} \) whose parity-check matrix is 
 						\(H \)=
 						\(\begin{bmatrix}
 						0 & 0 & 1 & 0 & 1\\
@@ -100,75 +106,75 @@
 
 					<table align="center">
 						<tr>
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a1" onClick="change(id)">
-									<font size="+2">[</font> 0 0 0 0 0 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0\end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a2" onClick="change(id)">
-									<font size="+2">[</font> 0 0 1 0 1 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 0 \\ 0 \\ 1 \\ 0 \\1 \end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a3" onClick="change(id)">
-									<font size="+2">[</font> 1 1 0 1 0 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 1 \\ 1 \\ 0 \\ 1 \\ 0\end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a4" onClick="change(id)">
-									<font size="+2">[</font> 0 1 1 0 1 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 0 \\ 1 \\ 1 \\ 0 \\ 1\end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a5" onClick="change(id)">
-									<font size="+2">[</font> 0 1 0 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 0 \\ 1 \\ 0 \\ 1 \\ 1\end{bmatrix}\)
 								</button>
 							</div></td>
 						</tr>
 
 						<tr>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a6" onClick="change(id)">
-									<font size="+2">[</font> 1 0 0 1 0 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 1 \\ 0 \\ 0 \\ 1 \\ 0\end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a7" onClick="change(id)">
-									<font size="+2">[</font> 1 0 1 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 1 \\ 0 \\ 1 \\ 1 \\ 1\end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a8" onClick="change(id)">
-									<font size="+2">[</font> 1 0 0 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 1 \\ 0 \\ 0 \\ 1 \\ 1\end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a9" onClick="change(id)">
-									<font size="+2">[</font> 1 1 1 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 1 \\ 1 \\ 1 \\ 1 \\ 1\end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="a10" onClick="change(id)">
-									<font size="+2">[</font> 1 0 1 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix}0 \\ 1 \\ 0 \\ 1 \\ 0 \\ 1\end{bmatrix}\)
 								</button>
 							</div></td>
 						</tr>
 					</table>
 					<br>
 
-					<button class="v-button" role="button" onClick="check1()"> Submit </button>
-					<button class="v-button" role="button" onClick="deselect1()"> Reset </button>
-					<button class="v-button" role="button" onclick="pa2()"> Next </button>
+					<button id="submitBtn1" class="v-button" role="button" onClick="check1()"> Submit </button>
+					<button id="resetBtn1" class="v-button" role="button" onClick="deselect1()"> Reset </button>
+					<button id="nextBtn1" class="v-button" role="button" onclick="pa2()"> Next </button>
 				</div>
 			</div>
 
@@ -183,12 +189,12 @@
 		</div>
 	</section>
 
-	<section id="ex2" style="display: none;">
+	<section id="ex2" class="experiment" style="display: none;">
 		<div class="columns is-centered">
 			<div class="column is-11-desktop is-12-tablet is-12-mobile">
 				<div class="v-datalist-container components-list">
 					<br>
-					<p> All set of codeword for C whose parity-check matrix
+					<p> Please select all possible codewords corresponding to code \( \mathcal{C} \) whose parity-check matrix is
 						\(H \)=
 						\(\begin{bmatrix}
 						1 & 1 & 0 & 1 & 0 & 0 & 0\\
@@ -210,113 +216,113 @@
 
 					<table align="center">
 						<tr>
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w1" onClick="change(id)">
-									<font size="+2">[</font> 1 0 0 1 0 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 0 \\ 0 \\ 1 \\ 0 \\ 1 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w2" onClick="change(id)">
-									<font size="+2">[</font> 0 1 0 1 1 1 0<font size="+2">]</font>
+									\(\begin{bmatrix} 0 \\ 1 \\ 0 \\ 1 \\ 1 \\ 1 \\ 0 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w3" onClick="change(id)">
-									<font size="+2">[</font> 0 0 0 0 0 0 0 <font size="+2">]</font>
+									\(\begin{bmatrix} 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w4" onClick="change(id)">
-									<font size="+2">[</font> 1 1 1 0 0 0 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 1 \\ 1 \\ 0 \\ 0 \\ 0 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 						</tr>
 						<tr>
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w5" onClick="change(id)">
-									<font size="+2">[</font> 0 0 1 0 1 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 0 \\ 0 \\ 1 \\ 0 \\ 1 \\ 1 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w6" onClick="change(id)">
-									<font size="+2">[</font> 1 1 0 1 0 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 1 \\ 0 \\ 1 \\ 0 \\ 1 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w7" onClick="change(id)">
-									<font size="+2">[</font> 1 1 0 0 1 0 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 1 \\ 0 \\ 0 \\ 1 \\ 1 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w8" onClick="change(id)">
-									<font size="+2">[</font> 1 0 1 1 1 0 0 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 0 \\ 1 \\ 1 \\ 1 \\ 0 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 						</tr>
 						<tr>
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w9" onClick="change(id)">
-									<font size="+2">[</font> 1 1 0 0 1 0 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 1 \\ 0 \\ 0 \\ 1 \\ 0 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w10" onClick="change(id)">
-									<font size="+2">[</font> 1 0 1 1 1 0 0 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 0 \\ 1 \\ 1 \\ 1 \\ 0 \\ 0 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w11" onClick="change(id)">
-									<font size="+2">[</font> 1 1 1 0 1 0 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 1 \\ 1 \\ 0 \\ 1 \\ 0 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w12" onClick="change(id)">
-									<font size="+2">[</font> 0 1 1 1 0 0 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 0 \\ 1 \\ 1 \\ 1 \\ 0 \\ 0 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 						</tr>
 						<tr>			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w13" onClick="change(id)">
-									<font size="+2">[</font> 1 1 1 0 0 1 0 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 1 \\ 1 \\ 0 \\ 0 \\ 1 \\ 0 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w14" onClick="change(id)">
-									<font size="+2">[</font> 0 1 1 0 1 1 0 <font size="+2">]</font>
+									\(\begin{bmatrix} 0 \\ 1 \\ 1 \\ 0 \\ 1 \\ 1 \\ 0 \end{bmatrix}\)
 								</button>
 							</div></td>
 			
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w15" onClick="change(id)">
-									<font size="+2">[</font> 1 1 1 1 1 1 1 <font size="+2">]</font>
+									\(\begin{bmatrix} 1 \\ 1 \\ 1 \\ 1 \\ 1 \\ 1 \\ 1 \end{bmatrix}\)
 								</button>
 							</div></td>
 
-							<td><div class="code-word">
+							<td style="padding: 10px;"><div class="code-word">
 								<button class="button-2" id="w16" onClick="change(id)">
-									<font size="+2">[</font> 0 0 0 0 0 1 0 <font size="+2">]</font>
+									\(\begin{bmatrix} 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 1 \\ 0 \end{bmatrix}\)
 								</button>
 							</div></td>
 						</tr>
-
+												
 						</table>
 	
 					<br>
 	
-					<button class="v-button" role="button" onClick="check2()"> Submit </button>
-					<button class="v-button" role="button" onClick="deselect2()"> Reset </button>
-					<button class="v-button" role="button" onclick="pa1()"> Previous </button>
+					<button id="submitBtn2" class="v-button" role="button" onClick="check2()"> Submit </button>
+					<button id="resetBtn2" class="v-button" role="button" onClick="deselect2()"> Reset </button>
+					<button id="prevBtn2" class="v-button" role="button" onclick="pa1()"> Previous </button>
 				</div>
 			</div>
 	
