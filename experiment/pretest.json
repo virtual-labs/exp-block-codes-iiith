@@ -22,7 +22,7 @@
       "question": "Consider two 3x3 matrices $A = \\begin{bmatrix} 1 & 0 & 1 \\\\ 1 & 1 & 0 \\\\ 0 & 1 & 1 \\end{bmatrix}$ and $B = \\begin{bmatrix} 1 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$. The result of matrix multiplication $AB$ over $\\mathbb{F}_2$ is",
       "answers": {
         "a": "$\\begin{bmatrix} 2 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
-        "b": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 1 \\end{bmatrix}$",
+        "b": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 0 \\end{bmatrix}$",
         "c": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{bmatrix}$",
         "d": "$\\begin{bmatrix} 0 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 1 & 1 & 1 \\end{bmatrix}$"
       },
