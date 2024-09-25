@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <title>
+        Parity Check Matrix
+    </title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/dimension_linear_block.css">
+
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container" style="margin-top:1%;">
+
+        <div class="columns is-centered">
+            <div class="column is-one-quarter v-instruction-title">
+                Tasks
+            </div>
+            <div class="column">
+                <div class="v-tabs">
+                    <ul>
+                        <li class="is-active" id="Task1">
+                            <a>
+                                Structure of the parity-check matrix 
+                            </a>
+                        </li>
+
+                        <li id="Task2" onclick="window.location.href = 'identify_codewords.html';">
+                            <a>
+                                Identify codewords
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column">
+                <div class="v-collapsible-instruction-container v-instruction-container">
+                    <div class="v-collapsible is-size-5">Instructions</div>
+                    <div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+                        <ul style="list-style: disc;">
+                            <b>Quick theory overview:</b>
+                            <li>
+                                An \( [n,k] \) linear block code \( \mathcal{C} \) has dimension \( k \) and blocklength \( n \). The generator matrix of such a code is given by \( k \times n \) matrix. A systematic generator matrix has the structure \( [I_k | P] \) where \( I_k \) denotes a \( k \times k \) identity matrix and \( P \) is a \( k \times (n-k) \) matrix. A corresponding parity check matrix of the code \( \mathcal{C} \) can be obtained as the \( (n-k) \times n \) matrix denoted by \( [P^T | I_{n-k}] \).
+                            </li>
+                        </ul>
+                        <br>
+                        <ul style="list-style: disc;">
+
+                            <b>Procedure:</b>
+
+                            <li>
+                                Enter the dimension of the given matrixes into the given boxes as row x column and click the <b>Submit</b> button.<br> Next exercis fill out the entries of the sub-matrix \(P^T\) and click <b>Submit</b>.
+                            </li>
+                            <li>
+                                Click <b>Reset</b> button to reset all your selected choices and restart.
+                            </li>
+                            <li>
+                                Click the <b>Next</b> button and get exercise to fill out empty blocks with bits to find the structure of the sub-matrix \(P^T\). Click the <b>Previous</b> button to get an exercise on finding the dimensions of some given matrixes.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <section id="example1">
+        <div class="columns is-centered">
+            <div class="column is-11-desktop is-12-tablet is-12-mobile">
+                <div class="v-datalist-container components-list">
+                    <p>Consider a generator matrix \( G \) = \(\begin{bmatrix}
+                            1 & 0 & 0 & 1 & 1 & 0 \\
+                            0 & 1 & 0 & 0 & 1 & 1 \\
+                            0 & 0 & 1 & 1 & 0 & 1
+                        \end{bmatrix}\), 
+                        find the dimensions of corresponding parity-check matrix \( H\), identity matrix \(I_{n-k}\), and sub-matrix \(P^T \).</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start">
+            <div class="column is-8-desktop is-12-tablet is-12-mobile">
+                <div class="box-question">
+                    <form id="form1">
+                        <table style="width: 50%;" align="center" text-align="center" border-collapse: collapse>
+                            <tr>
+                                <th>Matrix</th>
+                                <th colspan="2">Dimensions</th>
+                            </tr><br>
+                            <tr>
+                                <td>Enter the dimensions of \( H \)</td>
+                                <td>
+                                    <input style="width: 90%;" type="number" class="dimension" id="a1" min="0" max="8" placeholder="Rows"> 
+                                </td>
+                                <td>
+                                    <input style="width: 90%;" type="number" class="dimension" id="a2" min="0" max="8" placeholder="Columns">
+                                </td>
+                            </tr>
+                            <tr class="blank_row">
+                                <td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter the dimensions of \( I_{n-k} \)</td>
+                                <td>
+                                    <input style="width: 90%;" type="number" class="dimension" id="a3" min="0" max="4" placeholder="Rows">
+                                </td>
+                                <td>
+                                    <input style="width: 90%;" type="number" class="dimension" id="a4" min="0" max="4" placeholder="Columns">
+                                </td>
+                            </tr>
+                            <tr class="blank_row">
+                                <td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter the dimensions of \( P^{T} \)</td>
+                                <td>
+                                    <input style="width: 90%;" type="number" class="dimension" id="a5" min="0" max="4" placeholder="Rows">
+                                </td>
+                                <td>
+                                    <input style="width: 90%;" type="number" class="dimension" id="a6" min="0" max="4" placeholder="Columns">
+                                </td>
+                            </tr>
+                            <tr class="blank_row">
+                                <td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <button class="v-button" type="button" onclick="check1()">Submit</button>
+                        <button class="v-button" type="button" onclick="initial1()">Reset</button>
+                        <button class="v-button" type="button" onclick="page2()">Next</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="column is-3-desktop is-4-tablet is-12-mobile">
+                <div class="v-datalist-container components-list">
+                    <div class="v-datalist-title">Observations</div>
+                    <div id="obs1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="example2" style="display: none;">
+        <div class="columns is-centered">
+            <div class="column is-11-desktop is-12-tablet is-12-mobile">
+                <div class="v-datalist-container components-list">
+                    <p>Consider a generator matrix \( G \) = \(\begin{bmatrix}
+                        1 & 0 & 0 & 1 & 1 & 0 \\
+                        0 & 1 & 0 & 0 & 1 & 1 \\
+                        0 & 0 & 1 & 1 & 0 & 1
+                    \end{bmatrix}\), 
+                    find the dimensions of corresponding parity-check matrix \( H\), identity matrix \(I_{n-k}\), and sub-matrix \(P^T \).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start">
+            <div class="column is-8-desktop is-12-tablet is-12-mobile">
+                <div class="box-question">
+                    <p>Enter the entries for \( P^T \):</p><br>
+                    
+                    <form id="form2">
+                        <label for="m1"> </label>
+                        <input type="number" class="bit" id="m1" min="0" max="1">
+
+                        <label for="m2"> </label>
+                        <input type="number" class="bit" id="m2" min="0" max="1">
+
+                        <label for="m3"> </label>
+                        <input type="number" class="bit" id="m3" min="0" max="1"><br>
+
+                        <label for="m4"> </label>
+                        <input type="number" class="bit" id="m4" min="0" max="1">
+
+                        <label for="m5"> </label>
+                        <input type="number" class="bit" id="m5" min="0" max="1">
+
+                        <label for="m6"> </label>
+                        <input type="number" class="bit" id="m6" min="0" max="1"><br>
+
+                        <label for="m7"> </label>
+                        <input type="number" class="bit" id="m7" min="0" max="1">
+
+                        <label for="m8"> </label>
+                        <input type="number" class="bit" id="m8" min="0" max="1">
+
+                        <label for="m9"> </label>
+                        <input type="number" class="bit" id="m9" min="0" max="1"><br>
+                        <br>
+
+                        <button class="v-button" type="button" onclick="check2()">Submit</button>
+                        <button class="v-button" type="button" onclick="initial2()">Reset</button>
+                        <button class="v-button" type="button" onclick="page1()">Previous</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="column is-3-desktop is-4-tablet is-12-mobile">
+                <div class="v-datalist-container components-list">
+                    <div class="v-datalist-title">Observations</div>
+                    <div id="obs2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./js/parity_check.js"></script>
+<script src="../assets/js/iframeResize.js"></script></body>
+
+</html>
