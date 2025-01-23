@@ -32,7 +32,7 @@
                     <ul class="taskbar-tabs">
                         <li class="is-active" id="Task1">
                             <a>
-                                Structure of the parity-check matrix 
+                                Structure of the parity-check matrix
                             </a>
                         </li>
 
@@ -54,7 +54,12 @@
                         <ul style="list-style: disc;">
                             <b>Quick theory overview:</b>
                             <li>
-                                An \( [n,k] \) linear block code \( \mathcal{C} \) has dimension \( k \) and blocklength \( n \). The generator matrix of such a code is given by \( k \times n \) matrix. A systematic generator matrix has the structure \( [I_k | P] \) where \( I_k \) denotes a \( k \times k \) identity matrix and \( P \) is a \( k \times (n-k) \) matrix. A corresponding parity check matrix of the code \( \mathcal{C} \) can be obtained as the \( (n-k) \times n \) matrix denoted by \( [P^T | I_{n-k}] \).
+                                An \( [n,k] \) linear block code \( \mathcal{C} \) has dimension \( k \) and blocklength
+                                \( n \). The generator matrix of such a code is given by \( k \times n \) matrix. A
+                                systematic generator matrix has the structure \( [I_k | P] \) where \( I_k \) denotes a
+                                \( k \times k \) identity matrix and \( P \) is a \( k \times (n-k) \) matrix. A
+                                corresponding parity check matrix of the code \( \mathcal{C} \) can be obtained as the
+                                \( (n-k) \times n \) matrix denoted by \( [P^T | I_{n-k}] \).
                             </li>
                         </ul>
                         <br>
@@ -63,13 +68,17 @@
                             <b>Procedure:</b>
 
                             <li>
-                                Enter the dimension of the given matrixes into the given boxes as row x column and click the <b>Submit</b> button.<br> Next exercis fill out the entries of the sub-matrix \(P^T\) and click <b>Submit</b>.
+                                Enter the dimension of the given matrixes into the given boxes as row x column and click
+                                the <b>Submit</b> button.<br> Next exercis fill out the entries of the sub-matrix
+                                \(P^T\) and click <b>Submit</b>.
                             </li>
                             <li>
                                 Click <b>Reset</b> button to reset all your selected choices and restart.
                             </li>
                             <li>
-                                Click the <b>Next</b> button and get exercise to fill out empty blocks with bits to find the structure of the sub-matrix \(P^T\). Click the <b>Previous</b> button to get an exercise on finding the dimensions of some given matrixes.
+                                Click the <b>Next</b> button and get exercise to fill out empty blocks with bits to find
+                                the structure of the sub-matrix \(P^T\). Click the <b>Previous</b> button to get an
+                                exercise on finding the dimensions of some given matrixes.
                             </li>
                         </ul>
                     </div>
@@ -85,15 +94,16 @@
             <div class="column is-11-desktop is-12-tablet is-12-mobile">
                 <div class="v-datalist-container components-list">
                     <p>Consider a generator matrix \( G \) = \(\begin{bmatrix}
-                            1 & 0 & 0 & 1 & 1 & 0 \\
-                            0 & 1 & 0 & 0 & 1 & 1 \\
-                            0 & 0 & 1 & 1 & 0 & 1
-                        \end{bmatrix}\), 
-                        find the dimensions of corresponding parity-check matrix \( H\), identity matrix \(I_{n-k}\), and sub-matrix \(P^T \).</p>
+                        1 & 0 & 0 & 1 & 1 & 0 \\
+                        0 & 1 & 0 & 0 & 1 & 1 \\
+                        0 & 0 & 1 & 1 & 0 & 1
+                        \end{bmatrix}\),
+                        find the dimensions of corresponding parity-check matrix \( H\), identity matrix \(I_{n-k}\),
+                        and sub-matrix \(P^T \).</p>
                 </div>
             </div>
         </div>
-    
+
         <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start">
             <div class="column is-8-desktop is-12-tablet is-12-mobile">
                 <div class="box-question">
@@ -106,10 +116,12 @@
                             <tr>
                                 <td>Enter the dimensions of \( H \)</td>
                                 <td>
-                                    <input style="width: 90%;" type="number" class="dimension" id="a1" min="0" max="8" placeholder="Rows"> 
+                                    <input style="width: 90%;" type="number" class="dimension" id="a1" min="0" max="8"
+                                        placeholder="Rows">
                                 </td>
                                 <td>
-                                    <input style="width: 90%;" type="number" class="dimension" id="a2" min="0" max="8" placeholder="Columns">
+                                    <input style="width: 90%;" type="number" class="dimension" id="a2" min="0" max="8"
+                                        placeholder="Columns">
                                 </td>
                             </tr>
                             <tr class="blank_row">
@@ -118,10 +130,12 @@
                             <tr>
                                 <td>Enter the dimensions of \( I_{n-k} \)</td>
                                 <td>
-                                    <input style="width: 90%;" type="number" class="dimension" id="a3" min="0" max="4" placeholder="Rows">
+                                    <input style="width: 90%;" type="number" class="dimension" id="a3" min="0" max="4"
+                                        placeholder="Rows">
                                 </td>
                                 <td>
-                                    <input style="width: 90%;" type="number" class="dimension" id="a4" min="0" max="4" placeholder="Columns">
+                                    <input style="width: 90%;" type="number" class="dimension" id="a4" min="0" max="4"
+                                        placeholder="Columns">
                                 </td>
                             </tr>
                             <tr class="blank_row">
@@ -130,10 +144,12 @@
                             <tr>
                                 <td>Enter the dimensions of \( P^{T} \)</td>
                                 <td>
-                                    <input style="width: 90%;" type="number" class="dimension" id="a5" min="0" max="4" placeholder="Rows">
+                                    <input style="width: 90%;" type="number" class="dimension" id="a5" min="0" max="4"
+                                        placeholder="Rows">
                                 </td>
                                 <td>
-                                    <input style="width: 90%;" type="number" class="dimension" id="a6" min="0" max="4" placeholder="Columns">
+                                    <input style="width: 90%;" type="number" class="dimension" id="a6" min="0" max="4"
+                                        placeholder="Columns">
                                 </td>
                             </tr>
                             <tr class="blank_row">
@@ -146,7 +162,7 @@
                     </form>
                 </div>
             </div>
-    
+
             <div class="column is-3-desktop is-4-tablet is-12-mobile">
                 <div class="v-datalist-container components-list">
                     <div class="v-datalist-title">Observations</div>
@@ -155,7 +171,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="example2" style="display: none;">
         <div class="columns is-centered">
             <div class="column is-11-desktop is-12-tablet is-12-mobile">
@@ -164,8 +180,9 @@
                         1 & 0 & 0 & 1 & 1 & 0 \\
                         0 & 1 & 0 & 0 & 1 & 1 \\
                         0 & 0 & 1 & 1 & 0 & 1
-                    \end{bmatrix}\), 
-                    find the dimensions of corresponding parity-check matrix \( H\), identity matrix \(I_{n-k}\), and sub-matrix \(P^T \).</p>
+                        \end{bmatrix}\),
+                        find the dimensions of corresponding parity-check matrix \( H\), identity matrix \(I_{n-k}\),
+                        and sub-matrix \(P^T \).</p>
                 </div>
             </div>
         </div>
@@ -174,7 +191,7 @@
             <div class="column is-8-desktop is-12-tablet is-12-mobile">
                 <div class="box-question">
                     <p>Enter the entries for \( P^T \):</p><br>
-                    
+
                     <form id="form2">
                         <label for="m1"> </label>
                         <input type="number" class="bit" id="m1" min="0" max="1">
@@ -210,7 +227,7 @@
                     </form>
                 </div>
             </div>
-    
+
             <div class="column is-3-desktop is-4-tablet is-12-mobile">
                 <div class="v-datalist-container components-list">
                     <div class="v-datalist-title">Observations</div>
