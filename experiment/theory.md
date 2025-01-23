@@ -1,18 +1,16 @@
-# Theory 
-
-## Linear Block Codes
+### Linear Block Codes
 
 Linear Block Codes are arguably the most popular class of forward error correcting codes used in communication systems. 
 
 A linear block code $\mathcal{C}$ has three important parameters of interest, the blocklength $n$, the rate $R$ of the code given by the ratio $k/n$ of its dimension $k$ to its length $n$, and its minimum distance, which is the least Hamming distance between any pair of distinct codewords. In the case of linear block codes, the minimum distance of the code is exactly equal to the minimum weight of any non-zero codeword in the code. We denote the minimum distance of the code as $d_{\min}(\mathcal{C})$. 
 
-## Binary Linear Block Codes, Codewords, Dimension of a Code, Number of Codewords, and Rate 
+### Binary Linear Block Codes, Codewords, Dimension of a Code, Number of Codewords, and Rate 
 
 Our focus is on binary linear block codes. A binary linear block code is a subspace of the $n$-dimensional vector space $\mathbb{F}^n_2$ over the finite field $\mathbb{F}_2$ with two elements $\{0,1\}$, with the operations addition and multiplication modulo $2$. 
 
 The *dimension* of a linear code is typically denoted by $k$. Observe that $1\leq k \leq n$. We call such a binary linear code as $[n,k]$ binary linear code, where $n$ refers to the *blocklength* of the code, and $k$ refers to its dimension. Since the dimension of the code subspace is $k$, the code itself contains *$2^k$ codewords*, corresponding to all possible linear combinations. The *rate* of a $[n,k]$ linear block code is defined as the ratio $\frac{k}{n}$, which signifies the fraction of the message bits to the number of bits in the codeword. 
 
-## Generator Matrix and the code as its Rowspace
+### Generator Matrix and the code as its Rowspace
 
 A *generator matrix* $G$ of an $[n,k]$ binary linear code $\cal C$ is a $k\times n$ matrix over $\mathbb{F}_2$, containing a basis of the code space as its rows. In other words, the code $\cal C$ is the rowspace of the matrix $G$. Let us see an example. 
 
@@ -41,7 +39,7 @@ $$
 $$
 Note that the dimension of this code is $k=3$, its blocklength is $n=7$, and its rate is $\frac{3}{7}$. Observe that the all-zero vector is a codeword of this code. Indeed, the all-zero vector is a member of every codeword. We also observe that the minimum weight of any non-zero codeword in $\cal{C}_1$ is $4$. Thus, the minimum distance of the code is $d_{\min}(\cal{C}_1)=4$. 
 
-## Parity Check Matrix of a Code
+### Parity Check Matrix of a Code
 
 A parity check matrix of an $[n,k]$ binary linear code $\mathcal{C}$ is $l\times n$ matrix $H$, with entries from $\mathbb{F}_2$ such that $H$ contains exactly $n-k$ linearly independent rows and $H\boldsymbol{c}^T=\boldsymbol{0}, \forall \boldsymbol{c}\in\cal{C}$. Thus, the codewords of $\cal{C}$ are orthogonal to the rows of $H$. If the generator matrix $G$ of the code $\cal C$ is of the form $[I_k | P]$ (a column-wise concatenation of a $k\times k$ identity matrix $I_k$, and a $k\times n-k$ matrix $P$), then a parity check matrix for the code can be written as $[P^T|I_{n-k}]$, where $P^T$ denotes the transpose of the matrix $P$. For the example code $\cal{C}_1$ with generator matrix $G_1$ described before, we see that such parity check matrix is given by
 $$
@@ -78,7 +76,7 @@ $$
 $$
 For the example discussed in this page, you can observe that, out of the set of all $2^7$ binary vectors of length $7$, it is exactly the set of $8$ vectors $\boldsymbol{v}\in\mathbb{F}_2^n$, which are the codewords of $\mathcal{C}$ which satisfy the equation $H\boldsymbol{v}^T=\boldsymbol{0}$. 
 
-## Encoding
+### Encoding
 
 The way an $[n,k]$ code $\cal C$  is used in communication is as follows. The *message vector* $\boldsymbol{m}$ of length $k$ is multiplied with the generator matrix $G$ to obtain a codeword $\boldsymbol{c}$ of length $n$. This codeword is then transmitted through the communication channel. For example, consider the message vector $\boldsymbol{m}=(1,0,1)$ for the code $\cal{C}_1$. The corresponding codeword is given as 
 $$

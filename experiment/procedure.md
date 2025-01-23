@@ -1,5 +1,3 @@
-# Procedure
-
 The experiment consists of two sub-experiments. The user is recommended to go through these in the same sequence as they are presented. 
 
 0. Dimension of linear block code and its rate. 
