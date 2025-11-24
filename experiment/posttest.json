@@ -11,11 +11,11 @@
         "e": "None"
       },
       "explanations": {
-        "a": "For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
-        "b": "For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.", 
-        "c": "For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
-        "d": "For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
-        "e": "Yes, this is the right answer! All options are valid parity-check matrix of given generator matrix."
+        "a": "Incorrect. For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
+        "b": "Incorrect. For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
+        "c": "Incorrect. For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
+        "d": "Incorrect. For the given generator matrix, we have number of rows as $k=3$ and the blocklength (number of columns) as $n=6$. Further the three rows of $G$ are linearly independent. Thus, any parity check matrix $H$ should have $n-k=3$ linearly independent rows, and $6$ columns, and should satisfy the property $GH^T=\\boldsymbol{0}_{k\\times n-k}$. The matrix in this option has exactly all these properties. Hence it is a valid parity check matrix. To find the correct answer, look for a matrix which does <b>not have<b> at least one of these three properties.",
+        "e": "Correct. All options are valid parity-check matrix of given generator matrix."
       },
       "correctAnswer": "e",
       "difficulty": "intermediate"
@@ -29,10 +29,10 @@
         "d": "$\\left(0,0,0,0,0,0\\right)$"
       },
       "explanations": {
-        "a": "Correct option",
-        "b": "Valid codeword but not correct w.r.t $\\textbf{m}$. For instance first cooardinate of the codeword corresponding to message vector will be $(1\\times 1 + 0\\times 1 + 0\\times 1 + 1\\times 1)\\mod2 = 0$.",
-        "c": "Valid codeword but not correct w.r.t $\\textbf{m}$. For instance first cooardinate of the codeword corresponding to message vector will be $(1\\times 1 + 0\\times 1 + 0\\times 1 + 1\\times 1)\\mod2 = 0$.",
-        "d": "Valid codeword but not correct w.r.t $\\textbf{m}$. For instance third cooardinate of the codeword corresponding to message vector will be $(1\\times 1 + 0\\times 0 + 0\\times 0 + 1\\times 0)\\mod2 = 1$."
+        "a": "Correct.",
+        "b": "Incorrect. Valid codeword but not correct w.r.t $\\textbf{m}$. For instance first cooardinate of the codeword corresponding to message vector will be $(1\\times 1 + 0\\times 1 + 0\\times 1 + 1\\times 1)\\mod2 = 0$.",
+        "c": "Incorrect. Valid codeword but not correct w.r.t $\\textbf{m}$. For instance first cooardinate of the codeword corresponding to message vector will be $(1\\times 1 + 0\\times 1 + 0\\times 1 + 1\\times 1)\\mod2 = 0$.",
+        "d": "Incorrect. Valid codeword but not correct w.r.t $\\textbf{m}$. For instance third cooardinate of the codeword corresponding to message vector will be $(1\\times 1 + 0\\times 0 + 0\\times 0 + 1\\times 0)\\mod2 = 1$."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -46,10 +46,10 @@
         "d": "$\\left(0,1,1,1\\right)$"
       },
       "explanations": {
-        "a": "A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
-        "b": "Zero-vector is a valid codeword for any linear code. A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
-        "c": "A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
-        "d": "Correct Option! An invalid vector, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} \\neq \\textbf{0}$."
+        "a": "Incorrect. A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
+        "b": "Incorrect. Zero-vector is a valid codeword for any linear code. A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
+        "c": "Incorrect. A valid codeword, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} = \\textbf{0}$.",
+        "d": "Correct. An invalid vector, $\\textbf{c}$, always satisfy $\\textbf{c}\\textbf{H} \\neq \\textbf{0}$."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -63,10 +63,10 @@
         "d": "$G = \\begin{bmatrix} 1 & 0 & 1 & 0 \\\\ 1 & 1 & 1 & 0 \\end{bmatrix}$ and message transmitted be $\\left(1,1\\right)$"
       },
       "explanations": {
-        "a": "Valid Generator matrix but wrong message vector.",
-        "b": "Invalid Generator matrix corresponding to given code.",
-        "c": "Correct option!",
-        "d": "Invalid Generator matrix corresponding to given code."
+        "a": "Incorrect. Valid Generator matrix but wrong message vector.",
+        "b": "Incorrect. Invalid Generator matrix corresponding to given code.",
+        "c": "Correct.",
+        "d": "Incorrect. Invalid Generator matrix corresponding to given code."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -80,10 +80,10 @@
         "d": "If the message is $\\left(0,0\\right)$, the corresponding codeword is $\\left(1,0,1,0\\right)$, given $a=1$."
       },
       "explanations": {
-        "a": "For $\\left(1,0\\right)$ and $a=0$ codeword be $\\left(1,0,1,0\\right)$",
-        "b": "For $\\left(1,1\\right)$ and $a=1$ codeword be $\\left(1,0,0,1\\right)$",
-        "c": "Correct option",
-        "d": "For $\\left(0,0\\right)$ and $a=0$ or $1$ codeword be $\\left(0,0,0,0\\right)$"
+        "a": "Incorrect. For $\\left(1,0\\right)$ and $a=0$ codeword be $\\left(1,0,1,0\\right)$",
+        "b": "Incorrect. For $\\left(1,1\\right)$ and $a=1$ codeword be $\\left(1,0,0,1\\right)$",
+        "c": "Correct.",
+        "d": "Incorrect. For $\\left(0,0\\right)$ and $a=0$ or $1$ codeword be $\\left(0,0,0,0\\right)$"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
