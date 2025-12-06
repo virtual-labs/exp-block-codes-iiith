@@ -69,16 +69,18 @@ function reset() {
 }
 
 function initial() {
+    let newGeneratorMatrix;
+    do {
+        newGeneratorMatrix = selectRandomGeneratorMatrix();
+    } while (newGeneratorMatrix === randomGeneratorMatrix); // Ensure it's different from the last one
 
-    randomGeneratorMatrix = selectRandomGeneratorMatrix();
+    randomGeneratorMatrix = newGeneratorMatrix;
     dim = randomGeneratorMatrix.dim;
     codelength = randomGeneratorMatrix.matrix[0].length;
 
     const generatorMatrixElement = document.getElementById("generatorMatrix");
     generatorMatrixElement.innerHTML = "Consider the matrix \\(A \\)= " + formatMatrix(randomGeneratorMatrix.matrix) + " over \\( \\mathbb{F}_2 \\). ";
-    // generatorMatrixElement.innerHTML = " \\(A \\)= " + formatMatrix(randomGeneratorMatrix.matrix);
 
-    // Trigger MathJax to typeset the updated content
     MathJax.typeset([generatorMatrixElement]);
 
     const isGeneratorQuestion = document.getElementById("isGeneratorQuestion");
@@ -88,7 +90,6 @@ function initial() {
 
     const rateEntered = document.getElementById("rateEntered");
 
-    // dimensionEntered.innerHTML = "Try with new matrix";
     rateEntered.innerHTML = "";
 
     isGeneratorQuestion.style.display = "block";
@@ -97,7 +98,6 @@ function initial() {
     generatorForm.reset();
     rateForm.reset();
 }
-
 
 function yesValidGeneratorMatrix() {
     const dim = randomGeneratorMatrix.dim;
@@ -132,11 +132,6 @@ function notValidGeneratorMatrix() {
             document.getElementById("dimensionEntered").innerHTML = "<b>Correct Answer!!!</b>";
             document.getElementById("dimensionEntered").style.color = "green";
 
-            // isGeneratorQuestion.style.display = "none";
-            // rateQuestion.style.display = "block";
-
-
-
             document.getElementById("dimensionEntered").innerHTML = "<b>Yes, your answer that the previously showed matrix is not a generator matrix, is absolutely correct! Now, look at this new matrix, and answer the question again.</b>";
 
             initial();
@@ -160,9 +155,7 @@ function checkRate() {
 
     const rateForm = document.getElementById("rateForm");
 
-    // remove the dimensionEntered message
     dimensionEntered.innerHTML = "";
-    // dimensionEntered.style.display = "none";s
 
     if (dimensionInput == dim && codelengthInput == codelength) {
         rateEntered.innerHTML = "<b>Correct Answer!!!</b>";
@@ -182,8 +175,5 @@ function checkRate() {
             rateEntered.style.color = "red";
             return;
         }
-
-
     }
-
 }

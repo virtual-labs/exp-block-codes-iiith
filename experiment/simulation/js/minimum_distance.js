@@ -39,6 +39,11 @@ function initial() {
     receivedCodewordBitsEntered = [0, 0, 0, 0, 0, 0];
     receivedCodewordBits = [0, 0, 0, 0, 0, 0];
 
+    // Reset the bit and codeword bit displays
+    for (let i = 1; i <= codewordBits.length; i++) {
+        document.getElementById('codewordBit' + i).innerText = 0;
+    }
+
     form1.reset();
     form2.reset();
 
