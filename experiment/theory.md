@@ -21,7 +21,7 @@ G_1=\begin{bmatrix}
 0&1&0&1&0&1&1\\
 0&0&1&1&1&0&1
 \end{bmatrix}
-\end{aligned}
+\end{aligned} \tag{1}
 $$
 The *rowspace* of $G_1$ is the code $\mathcal{C}_1$ is the set of all the linear combinations of all rows of $G_1$. Since the three rows of $G$ are linearly independent, we will obtain $8$ unique codewords, as follows. 
 $$
@@ -35,7 +35,7 @@ $$
 (1&1&0&1&1&0&0)\\
 (1&0&1&1&0&0&1)\\
 (0&1&1&0&1&1&0)
-\end{Bmatrix}
+\end{Bmatrix} \tag{2}
 $$
 Note that the dimension of this code is $k=3$, its blocklength is $n=7$, and its rate is $\frac{3}{7}$. Observe that the all-zero vector is a codeword of this code. Indeed, the all-zero vector is a member of every codeword. We also observe that the minimum weight of any non-zero codeword in $\cal{C}_1$ is $4$. Thus, the minimum distance of the code is $d_{\min}(\cal{C}_1)=4$. 
 
@@ -48,7 +48,7 @@ H_1=\begin{bmatrix}
 1&0&1&0&1&0&0\\
 1&1&0&0&0&1&0\\
 1&1&1&0&0&0&1
-\end{bmatrix}. 
+\end{bmatrix}. \tag{3}
 $$
 Observe that $n-k=4$ in this case, and thus we see the $4\times 4$ identity submatrix in $H_1$. However, this is not the only parity check matrix for $\cal{C}_1$. The following matrix $H_2$ is also a valid parity check matrix for the code. 
 $$
@@ -57,7 +57,7 @@ H_2=\begin{bmatrix}
 1&0&1&0&1&0&0\\
 1&1&0&0&0&1&0\\
 0&0&1&0&0&1&1
-\end{bmatrix}. 
+\end{bmatrix}. \tag{4}
 $$
 How do we verify that both $H_1$ and $H_2$ are valid parity check matrices for $\cal{C}_1$? We do this by observing that both have rank $n-k=4$ (they contain $4$ linearly independent rows over $\mathbb{F}_2$) and also that $H_1\boldsymbol{c}^T=H_2\boldsymbol{c}^T=\boldsymbol{0}$, for all the $8$ codewords $\boldsymbol{c}\in\cal{C}_1$ shown above. 
 
@@ -68,11 +68,11 @@ c_1+c_2+c_3&=0\\
 c_0+c_2+c_4&=0\\
 c_0+c_1+c_5&=0\\
 c_0+c_1+c_2+c_6&=0.
-\end{aligned}
+\end{aligned} \tag{5}
 $$
 Further, we also observe that, since $H$ has rank exactly equal to $n-k$, the code $\mathcal{C}$ is precisely the set of all $n$-length vectors $\boldsymbol{v}$ taken from $\mathbb{F}_2^n$ which satisfy the equations given by $H\boldsymbol{v}^T=\boldsymbol{0}$. That is, we can write
 $$
-\mathcal{C}=\{\boldsymbol{v}\in\mathbb{F}_2^n : H\boldsymbol{v}^T=\boldsymbol{0} \}. 
+\mathcal{C}=\{\boldsymbol{v}\in\mathbb{F}_2^n : H\boldsymbol{v}^T=\boldsymbol{0} \}. \tag{6}
 $$
 For the example discussed in this page, you can observe that, out of the set of all $2^7$ binary vectors of length $7$, it is exactly the set of $8$ vectors $\boldsymbol{v}\in\mathbb{F}_2^n$, which are the codewords of $\mathcal{C}$ which satisfy the equation $H\boldsymbol{v}^T=\boldsymbol{0}$. 
 
@@ -84,7 +84,7 @@ $$
 1&0&0&0&1&1&1\\
 0&1&0&1&0&1&1\\
 0&0&1&1&1&0&1
-\end{bmatrix}=(1,0,1,1,0,1,0).
+\end{bmatrix}=(1,0,1,1,0,1,0). \tag{7}
 $$
 This codeword $(1,0,1,1,0,1,0)$ is transmitted through the channel, when we want to communicate the $3$-bit message vector $(1,0,1)$. Indeed, each codeword in $\cal{C}_1$ is the codeword obtained by encoding a particular $3$-length message vector. Similarly, for any $[n,k]$ linear code $\cal{C}$, every codeword is obtained by encoding specific $k$-length message vector. Corresponding to the $2^k$ message vectors in $\mathbb{F}_2^k$, there are $2^k$ codewords of length $n$ in $\cal{C}$.  
 
