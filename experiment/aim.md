@@ -1,1 +1,1 @@
-### Aim of the experiment
+The aim of this experiment is to introduce the basic ideas about linear block codes. The purpose of linear block codes, in the context of this present virtual lab on Modern Coding Theory, is for forward error-correction in communication systems. We present the fundamental objects and parameters associated with binary linear block codes, such as generator matrix of the code, parity-check matrix, the dimension and rate of the code, and its minimum distance. 
