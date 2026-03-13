@@ -23,7 +23,7 @@ G_1=\begin{bmatrix}
 \end{bmatrix}
 \end{aligned} \tag{1}
 $$
-The *rowspace* of $G_1$ is the code $\mathcal{C}_1$ is the set of all the linear combinations of all rows of $G_1$. Since the three rows of $G$ are linearly independent, we will obtain $8$ unique codewords, as follows. 
+The *rowspace* of $G_1$, which is the code $\mathcal{C}_1$, is the set of all the linear combinations of all rows of $G_1$. Since the three rows of $G$ are linearly independent, we will obtain $8$ unique codewords, as follows. 
 $$
 \mathcal{C}_1=
 \begin{Bmatrix}
@@ -31,13 +31,13 @@ $$
 (1&0&0&0&1&1&1)\\
 (0&1&0&1&0&1&1)\\
 (0&0&1&1&1&0&1)\\
-(0&0&1&1&1&0&1)\\
 (1&1&0&1&1&0&0)\\
-(1&0&1&1&0&0&1)\\
-(0&1&1&0&1&1&0)
+(0&1&1&0&1&1&0)\\
+(1&0&1&1&0&1&0)\\
+(1&1&1&0&0&0&1)
 \end{Bmatrix} \tag{2}
 $$
-Note that the dimension of this code is $k=3$, its blocklength is $n=7$, and its rate is $\frac{3}{7}$. Observe that the all-zero vector is a codeword of this code. Indeed, the all-zero vector is a member of every codeword. We also observe that the minimum weight of any non-zero codeword in $\cal{C}_1$ is $4$. Thus, the minimum distance of the code is $d_{\min}(\cal{C}_1)=4$. 
+Note that the dimension of this code is $k=3$, its blocklength is $n=7$, and its rate is $\frac{3}{7}$. Observe that the all-zero vector is a codeword of this code. Indeed, the all-zero vector is a member of every linear code. We also observe that the minimum weight of any non-zero codeword in $\cal{C}_1$ is $4$. Thus, the minimum distance of the code is $d_{\min}(\cal{C}_1)=4$. 
 
 ### Parity Check Matrix of a Code
 
