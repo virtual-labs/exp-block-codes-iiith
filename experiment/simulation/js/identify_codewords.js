@@ -30,7 +30,7 @@ function check1() {
         const isCorrect = correctIds.every(id => selectedIds.includes(id)) && selectedIds.length === correctIds.length;
 
         if (isCorrect) {
-            message = "<b>Correct Answer <br> Click Next to go on second experiment.</b>";
+            message = "<b>Correct Answer <br> Click Next to go on to the next part.</b>";
             color = "green";
         } else {
             if (incorrectCounter > 0) {
