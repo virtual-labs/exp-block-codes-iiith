@@ -1,0 +1,32 @@
+/* .user-input {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 400px) {
+    .codeword-buttons {
+        flex-direction: row;
+        margin-bottom: 1em;
+    }
+
+    /* scale the codeword buttons according to the screen size */
+    .codeword-buttons .bit, .field .bit {
+        height: auto;
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .user-input {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
