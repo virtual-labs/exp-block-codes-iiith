@@ -54,7 +54,7 @@ There are three tasks in this sub-experiment.
 1. **Encode Message**: Enter the message vector by clicking on the message bits. <br>
    <img src="images/exp1_0_1_input.png" alt="alt text"/><br>
 
-   - Click on **Encode** to encode the message vector. The entered codeword will be displayed in the Observation box and you will be take to next step.
+   - Click on **Submit** to encode the message vector. The entered codeword will be displayed in the Observation box and you will be taken to next step.
 
 2. **Enter Codeword**: Enter the codeword by clicking on the codeword bits. <br>
    <img src="images/exp1_0_1_codeword.png" alt="alt text"/><br>
@@ -65,7 +65,7 @@ There are three tasks in this sub-experiment.
 1. **Enter all codewords and hamming weight**: Enter all the codewords by clicking on the codeword bits and input the corresponding Hamming weight in the input box provided. <br>
    <img src="images/exp1_0_2_minimumdistance.png" alt="alt text"/><br>
 
-   - Click on **Next** to verify the correctness of the minimum distance. The Observation box will display the feedback message accordingly.
+   - Click on **Next** to verify the correctness of your answer. The Observation box will display the feedback message accordingly.
 
 2. **Enter the minimum distance**: Enter the minimum distance of the code in the input box provided. <br>
    <img src="images/exp1_0_2_minimumdistance_input.png" alt="alt text"/><br>
